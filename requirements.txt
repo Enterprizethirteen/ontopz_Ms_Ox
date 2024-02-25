@@ -1,0 +1,14 @@
+$ /opt/python/3.10.4/bin/python3.10 -m pip install --user jupyter-bokeh
+$ jupyter-labextension list
+JupyterLab v3.5.2
+/home/codespace/.local/share/jupyter/labextensions
+        @bokeh/jupyter_bokeh v3.0.5 enabled OK (python, jupyter_bokeh)
+
+$ pip show -f jupyter-bokeh
+...
+Files:
+  ../../../etc/jupyter/nbconfig/notebook.d/jupyter_bokeh.json
+
+$ locate jupyter_bokeh.json
+/home/codespace/.local/etc/jupyter/nbconfig/notebook.d/jupyter_bokeh.json
+/home/codespace/.local/lib/python3.10/site-packages/etc/jupyter/nbconfig/notebook.d/jupyter_bokeh.json
