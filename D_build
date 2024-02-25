@@ -1,0 +1,1 @@
+docker run -it --rm -e PRE_BUILD_COMMAND='pip install --upgrade pip' -v ${PWD}:/app mcr.microsoft.com/oryx/build:azfunc-jamstack oryx build /app
