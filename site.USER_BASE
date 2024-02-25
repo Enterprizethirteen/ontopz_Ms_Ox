@@ -1,0 +1,5 @@
+export PYTHONUSERBASE=/myappenv
+python -m pip install --user SomePackage
+
+set PYTHONUSERBASE=c:/myappenv
+py -m pip install --user SomePackage
