@@ -1,0 +1,2 @@
+C:\> py -m pip install --user SomePackage
+Can not perform a '--user' install. User site-packages are not visible in this virtualenv.
