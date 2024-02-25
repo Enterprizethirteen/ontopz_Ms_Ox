@@ -1,0 +1,10 @@
+Executing pre-build command...
+Collecting pip
+  Downloading pip-22.1-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.2.3
+    Uninstalling pip-20.2.3:
+      Successfully uninstalled pip-20.2.3
+Successfully installed pip-22.1
+Finished executing pre-build command.
