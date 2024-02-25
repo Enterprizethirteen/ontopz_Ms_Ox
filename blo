@@ -1,0 +1,2 @@
+The "symfony/flex" plugin was skipped because it requires a Plugin API version ("^2.1") that does not match your Composer installation ("2.0.0"). You may need to run composer update with the "--no-plugins" option.
+ 
