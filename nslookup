@@ -1,0 +1,18 @@
+$ nslookup oryx-cdn.microsoft.io
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+oryx-cdn.microsoft.io   canonical name = oryx-cdn.azureedge.net.
+oryx-cdn.azureedge.net  canonical name = oryx-cdn.afd.azureedge.net.
+oryx-cdn.afd.azureedge.net      canonical name = firstparty-azurefd-prod.trafficmanager.net.
+firstparty-azurefd-prod.trafficmanager.net      canonical name = dual.part-0018.t-0009.t-msedge.net.
+dual.part-0018.t-0009.t-msedge.net      canonical name = part-0018.t-0009.t-msedge.net.
+Name:   part-0018.t-0009.t-msedge.net
+Address: 13.107.246.46
+Name:   part-0018.t-0009.t-msedge.net
+Address: 13.107.213.46
+Name:   part-0018.t-0009.t-msedge.net
+Address: 2620:1ec:bdf::46
+Name:   part-0018.t-0009.t-msedge.net
+Address: 2620:1ec:46::46
