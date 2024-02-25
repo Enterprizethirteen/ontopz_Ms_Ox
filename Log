@@ -1,0 +1,678 @@
+2023-11-06T18:39:01.0150882Z ##[section]Starting: AzureStaticWebApp
+2023-11-06T18:39:01.0156361Z ==============================================================================
+2023-11-06T18:39:01.0156677Z Task         : Deploy Azure Static Web App
+2023-11-06T18:39:01.0156896Z Description  : [PREVIEW] Build and deploy an Azure Static Web App
+2023-11-06T18:39:01.0157246Z Version      : 0.228.0
+2023-11-06T18:39:01.0157362Z Author       : Microsoft Corporation
+2023-11-06T18:39:01.0157549Z Help         : https://aka.ms/swadocs
+2023-11-06T18:39:01.0157750Z ==============================================================================
+2023-11-06T18:39:01.1766797Z [command]/usr/bin/bash /home/vsts/work/_tasks/AzureStaticWebApp_18aad896-e191-4720-88d6-8ced4806941a/0.228.0/launch-docker.sh
+2023-11-06T18:39:01.7230583Z stable: Pulling from appsvc/staticappsclient
+2023-11-06T18:39:01.7231500Z 34df401c391c: Pulling fs layer
+2023-11-06T18:39:01.7232385Z 6fdd0e5b72cc: Pulling fs layer
+2023-11-06T18:39:01.7233552Z 4f4fb700ef54: Pulling fs layer
+2023-11-06T18:39:01.7234205Z 88fe015cf14b: Pulling fs layer
+2023-11-06T18:39:01.7241051Z 9e44d6d138a0: Pulling fs layer
+2023-11-06T18:39:01.7241599Z 98af2b123a63: Pulling fs layer
+2023-11-06T18:39:01.7242013Z c671a4184d84: Pulling fs layer
+2023-11-06T18:39:01.7242893Z 9e2355133c41: Pulling fs layer
+2023-11-06T18:39:01.7243460Z 591f75ae2b82: Pulling fs layer
+2023-11-06T18:39:01.7244055Z 5c0f6babaef3: Pulling fs layer
+2023-11-06T18:39:01.7244614Z 369362242adb: Pulling fs layer
+2023-11-06T18:39:01.7245176Z 0ca2605c1366: Pulling fs layer
+2023-11-06T18:39:01.7245782Z ecdb33ded0b8: Pulling fs layer
+2023-11-06T18:39:01.7246352Z 1bde5f778d10: Pulling fs layer
+2023-11-06T18:39:01.7246874Z d26b97037268: Pulling fs layer
+2023-11-06T18:39:01.7247409Z 178117d624a2: Pulling fs layer
+2023-11-06T18:39:01.7247970Z 4177acc89e57: Pulling fs layer
+2023-11-06T18:39:01.7248567Z 1e017b8b80fe: Pulling fs layer
+2023-11-06T18:39:01.7249212Z 88fe015cf14b: Waiting
+2023-11-06T18:39:01.7249775Z 9e44d6d138a0: Waiting
+2023-11-06T18:39:01.7250328Z 98af2b123a63: Waiting
+2023-11-06T18:39:01.7250895Z c671a4184d84: Waiting
+2023-11-06T18:39:01.7251473Z 9e2355133c41: Waiting
+2023-11-06T18:39:01.7252037Z 591f75ae2b82: Waiting
+2023-11-06T18:39:01.7252604Z 5c0f6babaef3: Waiting
+2023-11-06T18:39:01.7253160Z 369362242adb: Waiting
+2023-11-06T18:39:01.7253732Z 0ca2605c1366: Waiting
+2023-11-06T18:39:01.7254313Z ecdb33ded0b8: Waiting
+2023-11-06T18:39:01.7254905Z 1bde5f778d10: Waiting
+2023-11-06T18:39:01.7255427Z d26b97037268: Waiting
+2023-11-06T18:39:01.7255991Z 4177acc89e57: Waiting
+2023-11-06T18:39:01.7256558Z 1e017b8b80fe: Waiting
+2023-11-06T18:39:01.7257135Z 178117d624a2: Waiting
+2023-11-06T18:39:01.8719623Z 4f4fb700ef54: Verifying Checksum
+2023-11-06T18:39:01.8720620Z 4f4fb700ef54: Download complete
+2023-11-06T18:39:02.0942836Z 6fdd0e5b72cc: Verifying Checksum
+2023-11-06T18:39:02.0943422Z 6fdd0e5b72cc: Download complete
+2023-11-06T18:39:02.2685161Z 9e44d6d138a0: Verifying Checksum
+2023-11-06T18:39:02.2695222Z 9e44d6d138a0: Download complete
+2023-11-06T18:39:02.5680755Z 34df401c391c: Verifying Checksum
+2023-11-06T18:39:02.5746204Z 34df401c391c: Download complete
+2023-11-06T18:39:02.6869592Z 98af2b123a63: Verifying Checksum
+2023-11-06T18:39:02.6872125Z 98af2b123a63: Download complete
+2023-11-06T18:39:02.7085568Z 88fe015cf14b: Verifying Checksum
+2023-11-06T18:39:02.7086567Z 88fe015cf14b: Download complete
+2023-11-06T18:39:02.8769082Z 9e2355133c41: Verifying Checksum
+2023-11-06T18:39:02.8846191Z 9e2355133c41: Download complete
+2023-11-06T18:39:02.9134493Z 591f75ae2b82: Verifying Checksum
+2023-11-06T18:39:02.9135154Z 591f75ae2b82: Download complete
+2023-11-06T18:39:03.0221550Z c671a4184d84: Verifying Checksum
+2023-11-06T18:39:03.0222466Z c671a4184d84: Download complete
+2023-11-06T18:39:03.1199765Z 369362242adb: Verifying Checksum
+2023-11-06T18:39:03.1208277Z 369362242adb: Download complete
+2023-11-06T18:39:03.1998204Z 0ca2605c1366: Download complete
+2023-11-06T18:39:03.2947197Z ecdb33ded0b8: Verifying Checksum
+2023-11-06T18:39:03.2948121Z ecdb33ded0b8: Download complete
+2023-11-06T18:39:03.9353842Z d26b97037268: Verifying Checksum
+2023-11-06T18:39:03.9358106Z d26b97037268: Download complete
+2023-11-06T18:39:04.1400740Z 178117d624a2: Download complete
+2023-11-06T18:39:04.3835155Z 4177acc89e57: Verifying Checksum
+2023-11-06T18:39:04.3889732Z 4177acc89e57: Download complete
+2023-11-06T18:39:04.4142610Z 1bde5f778d10: Verifying Checksum
+2023-11-06T18:39:04.4148364Z 1bde5f778d10: Download complete
+2023-11-06T18:39:04.5608378Z 1e017b8b80fe: Verifying Checksum
+2023-11-06T18:39:04.5608838Z 1e017b8b80fe: Download complete
+2023-11-06T18:39:05.0947645Z 5c0f6babaef3: Verifying Checksum
+2023-11-06T18:39:05.0948114Z 5c0f6babaef3: Download complete
+2023-11-06T18:39:05.5622537Z 34df401c391c: Pull complete
+2023-11-06T18:39:06.3389636Z 6fdd0e5b72cc: Pull complete
+2023-11-06T18:39:08.2494183Z 4f4fb700ef54: Pull complete
+2023-11-06T18:39:09.1995743Z 88fe015cf14b: Pull complete
+2023-11-06T18:39:09.4221792Z 9e44d6d138a0: Pull complete
+2023-11-06T18:39:09.7622603Z 98af2b123a63: Pull complete
+2023-11-06T18:39:10.8686670Z c671a4184d84: Pull complete
+2023-11-06T18:39:10.8822068Z 9e2355133c41: Pull complete
+2023-11-06T18:39:10.9533093Z 591f75ae2b82: Pull complete
+2023-11-06T18:39:16.1771383Z 5c0f6babaef3: Pull complete
+2023-11-06T18:39:18.1888446Z 369362242adb: Pull complete
+2023-11-06T18:39:18.2046252Z 0ca2605c1366: Pull complete
+2023-11-06T18:39:18.2206467Z ecdb33ded0b8: Pull complete
+2023-11-06T18:39:23.1498402Z 1bde5f778d10: Pull complete
+2023-11-06T18:39:23.8754293Z d26b97037268: Pull complete
+2023-11-06T18:39:23.8887812Z 178117d624a2: Pull complete
+2023-11-06T18:39:23.9025301Z 4177acc89e57: Pull complete
+2023-11-06T18:39:23.9112788Z 1e017b8b80fe: Pull complete
+2023-11-06T18:39:23.9158612Z Digest: sha256:b43448a807094ed183901de33ac91e5a2e1644363f7054ab1f22bde8f09e6d0d
+2023-11-06T18:39:23.9171519Z Status: Downloaded newer image for mcr.microsoft.com/appsvc/staticappsclient:stable
+2023-11-06T18:39:24.3238535Z DeploymentId: 2ac713cf-3acb-4cfd-a781-b8024a643e9e
+2023-11-06T18:39:24.3243566Z 
+2023-11-06T18:39:24.4646688Z �[37mTry to validate location at: '/working_dir'.�[0m
+2023-11-06T18:39:24.4663806Z �[37mApp Directory Location: '/' was found.�[0m
+2023-11-06T18:39:24.4670067Z �[37mTry to validate location at: '/working_dir/swa-db-connections'.�[0m
+2023-11-06T18:39:24.4674684Z �[37mLocation does not exist. Try to validate location at: 'swa-db-connections'.�[0m
+2023-11-06T18:39:24.4678321Z �[37mFailed to validate the location.�[0m
+2023-11-06T18:39:24.4680960Z �[37mLooking for event info�[0m
+2023-11-06T18:39:25.0454385Z �[37mStarting to build app with Oryx�[0m
+2023-11-06T18:39:25.0463396Z �[33mAzure Static Web Apps utilizes Oryx to build both static applications and Azure Functions. You can find more details on Oryx here: https://github.com/microsoft/Oryx�[0m
+2023-11-06T18:39:25.0468613Z �[37m---Oryx build logs---�[0m
+2023-11-06T18:39:25.0469097Z �[37m�[0m
+2023-11-06T18:39:25.0469728Z �[37m�[0m
+2023-11-06T18:39:25.5009312Z �[37mOperation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx�[0m
+2023-11-06T18:39:25.5010814Z �[37mYou can report issues at https://github.com/Microsoft/Oryx/issues�[0m
+2023-11-06T18:39:25.5011420Z �[37m�[0m
+2023-11-06T18:39:25.5012945Z �[37mOryx Version: 0.2.20230717.2, Commit: 174f4287104c15e6f9ea3a4cf6e9f80accba3cf3, ReleaseTagName: 20230717.2�[0m
+2023-11-06T18:39:25.5016390Z �[37m�[0m
+2023-11-06T18:39:25.5020576Z �[37mBuild Operation ID: 989cccaef4178c0e�[0m
+2023-11-06T18:39:25.5024093Z �[37mOS Type           : bullseye�[0m
+2023-11-06T18:39:25.5027132Z �[37mImage Type        : jamstack�[0m
+2023-11-06T18:39:25.5030210Z �[37m�[0m
+2023-11-06T18:39:25.5187075Z �[37mDetecting platforms...�[0m
+2023-11-06T18:39:28.8453847Z �[37mDetected following platforms:�[0m
+2023-11-06T18:39:28.8455033Z �[37m  nodejs: 20.9.0�[0m
+2023-11-06T18:39:28.8508584Z �[37mVersion '20.9.0' of platform 'nodejs' is not installed. Generating script to install it...�[0m
+2023-11-06T18:39:28.9111417Z �[37mDetected the following frameworks: Next.js�[0m
+2023-11-06T18:39:29.0180448Z �[37m�[0m
+2023-11-06T18:39:29.0280892Z �[37m�[0m
+2023-11-06T18:39:29.0296001Z �[37mSource directory     : /working_dir�[0m
+2023-11-06T18:39:29.0296711Z �[37mDestination directory: /2ac713cf-3acb-4cfd-a781-b8024a643e9e-swa-oryx/app�[0m
+2023-11-06T18:39:29.0297280Z �[37m�[0m
+2023-11-06T18:39:29.0320537Z �[37mInstalling common platform dependencies...�[0m
+2023-11-06T18:39:29.0891866Z �[37mGet:1 http://deb.debian.org/debian bullseye InRelease [116 kB]�[0m
+2023-11-06T18:39:29.1043454Z �[37mGet:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]�[0m
+2023-11-06T18:39:29.1064626Z �[37mGet:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]�[0m
+2023-11-06T18:39:29.2196274Z �[37mGet:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8062 kB]�[0m
+2023-11-06T18:39:29.7655397Z �[37mGet:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [258 kB]�[0m
+2023-11-06T18:39:29.8894681Z �[37mGet:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [17.4 kB]�[0m
+2023-11-06T18:39:30.4132115Z �[37mFetched 8546 kB in 1s (6285 kB/s)�[0m
+2023-11-06T18:39:30.9057971Z �[37mReading package lists...�[0m
+2023-11-06T18:39:31.4251424Z �[37mReading package lists...�[0m
+2023-11-06T18:39:31.5651087Z �[37mBuilding dependency tree...�[0m
+2023-11-06T18:39:31.5651723Z �[37mReading state information...�[0m
+2023-11-06T18:39:31.6414979Z �[37mCalculating upgrade...�[0m
+2023-11-06T18:39:31.8709769Z �[37mThe following packages will be upgraded:�[0m
+2023-11-06T18:39:31.8710541Z �[37m  adduser base-files curl dpkg dpkg-dev libbsd-dev libbsd0 libc-bin�[0m
+2023-11-06T18:39:31.8716476Z �[37m  libc-dev-bin libc6 libc6-dev libcurl3-gnutls libcurl4 libdpkg-perl�[0m
+2023-11-06T18:39:31.8732455Z �[37m  libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0 libmariadb-dev�[0m
+2023-11-06T18:39:31.8733420Z �[37m  libmariadb-dev-compat libmariadb3 libncurses-dev libncurses6 libncursesw6�[0m
+2023-11-06T18:39:31.8740713Z �[37m  libssl-dev libssl1.1 libsystemd0 libtinfo6 libudev1 libwebp6 libx11-6�[0m
+2023-11-06T18:39:31.8741589Z �[37m  libx11-data libx11-dev linux-libc-dev mariadb-common ncurses-base�[0m
+2023-11-06T18:39:31.8747574Z �[37m  ncurses-bin openssl�[0m
+2023-11-06T18:39:31.9061478Z �[37m38 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.�[0m
+2023-11-06T18:39:31.9062210Z �[37mNeed to get 25.7 MB of archives.�[0m
+2023-11-06T18:39:31.9062800Z �[37mAfter this operation, 84.0 kB of additional disk space will be used.�[0m
+2023-11-06T18:39:31.9068709Z �[37mGet:1 http://deb.debian.org/debian bullseye/main amd64 base-files amd64 11.1+deb11u8 [70.2 kB]�[0m
+2023-11-06T18:39:31.9148337Z �[37mGet:2 http://deb.debian.org/debian bullseye/main amd64 dpkg amd64 1.20.13 [2538 kB]�[0m
+2023-11-06T18:39:31.9427780Z �[37mGet:3 http://deb.debian.org/debian bullseye/main amd64 ncurses-bin amd64 6.2+20201114-2+deb11u2 [429 kB]�[0m
+2023-11-06T18:39:31.9466497Z �[37mGet:4 http://deb.debian.org/debian-security bullseye-security/main amd64 libc6-dev amd64 2.31-13+deb11u7 [2361 kB]�[0m
+2023-11-06T18:39:31.9580286Z �[37mGet:5 http://deb.debian.org/debian-security bullseye-security/main amd64 libc-dev-bin amd64 2.31-13+deb11u7 [276 kB]�[0m
+2023-11-06T18:39:31.9601281Z �[37mGet:6 http://deb.debian.org/debian bullseye/main amd64 linux-libc-dev amd64 5.10.197-1 [1668 kB]�[0m
+2023-11-06T18:39:31.9715686Z �[37mGet:7 http://deb.debian.org/debian-security bullseye-security/main amd64 libc6 amd64 2.31-13+deb11u7 [2823 kB]�[0m
+2023-11-06T18:39:31.9844706Z �[37mGet:8 http://deb.debian.org/debian-security bullseye-security/main amd64 libc-bin amd64 2.31-13+deb11u7 [829 kB]�[0m
+2023-11-06T18:39:31.9886573Z �[37mGet:9 http://deb.debian.org/debian bullseye/main amd64 ncurses-base all 6.2+20201114-2+deb11u2 [272 kB]�[0m
+2023-11-06T18:39:31.9913342Z �[37mGet:10 http://deb.debian.org/debian bullseye/main amd64 libsystemd0 amd64 247.3-7+deb11u4 [376 kB]�[0m
+2023-11-06T18:39:31.9945223Z �[37mGet:11 http://deb.debian.org/debian bullseye/main amd64 adduser all 3.118+deb11u1 [241 kB]�[0m
+2023-11-06T18:39:31.9969459Z �[37mGet:12 http://deb.debian.org/debian bullseye/main amd64 libk5crypto3 amd64 1.18.3-6+deb11u4 [114 kB]�[0m
+2023-11-06T18:39:31.9987012Z �[37mGet:13 http://deb.debian.org/debian bullseye/main amd64 libkrb5support0 amd64 1.18.3-6+deb11u4 [65.6 kB]�[0m
+2023-11-06T18:39:32.0001578Z �[37mGet:14 http://deb.debian.org/debian bullseye/main amd64 libkrb5-3 amd64 1.18.3-6+deb11u4 [363 kB]�[0m
+2023-11-06T18:39:32.0032723Z �[37mGet:15 http://deb.debian.org/debian bullseye/main amd64 libgssapi-krb5-2 amd64 1.18.3-6+deb11u4 [165 kB]�[0m
+2023-11-06T18:39:32.0051110Z �[37mGet:16 http://deb.debian.org/debian bullseye/main amd64 libssl-dev amd64 1.1.1w-0+deb11u1 [1820 kB]�[0m
+2023-11-06T18:39:32.0169969Z �[37mGet:17 http://deb.debian.org/debian bullseye/main amd64 libssl1.1 amd64 1.1.1w-0+deb11u1 [1566 kB]�[0m
+2023-11-06T18:39:32.0272598Z �[37mGet:18 http://deb.debian.org/debian bullseye/main amd64 libncurses-dev amd64 6.2+20201114-2+deb11u2 [344 kB]�[0m
+2023-11-06T18:39:32.0303252Z �[37mGet:19 http://deb.debian.org/debian bullseye/main amd64 libncurses6 amd64 6.2+20201114-2+deb11u2 [102 kB]�[0m
+2023-11-06T18:39:32.0321319Z �[37mGet:20 http://deb.debian.org/debian bullseye/main amd64 libncursesw6 amd64 6.2+20201114-2+deb11u2 [132 kB]�[0m
+2023-11-06T18:39:32.0337643Z �[37mGet:21 http://deb.debian.org/debian bullseye/main amd64 libtinfo6 amd64 6.2+20201114-2+deb11u2 [342 kB]�[0m
+2023-11-06T18:39:32.0368150Z �[37mGet:22 http://deb.debian.org/debian bullseye/main amd64 libudev1 amd64 247.3-7+deb11u4 [168 kB]�[0m
+2023-11-06T18:39:32.0388309Z �[37mGet:23 http://deb.debian.org/debian-security bullseye-security/main amd64 curl amd64 7.74.0-1.3+deb11u10 [271 kB]�[0m
+2023-11-06T18:39:32.0408810Z �[37mGet:24 http://deb.debian.org/debian-security bullseye-security/main amd64 libcurl4 amd64 7.74.0-1.3+deb11u10 [347 kB]�[0m
+2023-11-06T18:39:32.0432823Z �[37mGet:25 http://deb.debian.org/debian bullseye/main amd64 dpkg-dev all 1.20.13 [2314 kB]�[0m
+2023-11-06T18:39:32.0580924Z �[37mGet:26 http://deb.debian.org/debian bullseye/main amd64 libdpkg-perl all 1.20.13 [1552 kB]�[0m
+2023-11-06T18:39:32.0681080Z �[37mGet:27 http://deb.debian.org/debian bullseye/main amd64 libbsd-dev amd64 0.11.3-1+deb11u1 [233 kB]�[0m
+2023-11-06T18:39:32.0702302Z �[37mGet:28 http://deb.debian.org/debian bullseye/main amd64 libbsd0 amd64 0.11.3-1+deb11u1 [108 kB]�[0m
+2023-11-06T18:39:32.0715945Z �[37mGet:29 http://deb.debian.org/debian-security bullseye-security/main amd64 libcurl3-gnutls amd64 7.74.0-1.3+deb11u10 [344 kB]�[0m
+2023-11-06T18:39:32.0739809Z �[37mGet:30 http://deb.debian.org/debian bullseye/main amd64 libmariadb-dev-compat amd64 1:10.5.21-0+deb11u1 [35.9 kB]�[0m
+2023-11-06T18:39:32.0747772Z �[37mGet:31 http://deb.debian.org/debian bullseye/main amd64 mariadb-common all 1:10.5.21-0+deb11u1 [37.1 kB]�[0m
+2023-11-06T18:39:32.0761186Z �[37mGet:32 http://deb.debian.org/debian bullseye/main amd64 libmariadb-dev amd64 1:10.5.21-0+deb11u1 [185 kB]�[0m
+2023-11-06T18:39:32.0778383Z �[37mGet:33 http://deb.debian.org/debian bullseye/main amd64 libmariadb3 amd64 1:10.5.21-0+deb11u1 [176 kB]�[0m
+2023-11-06T18:39:32.0797424Z �[37mGet:34 http://deb.debian.org/debian bullseye/main amd64 libwebp6 amd64 0.6.1-2.1+deb11u2 [259 kB]�[0m
+2023-11-06T18:39:32.0818447Z �[37mGet:35 http://deb.debian.org/debian-security bullseye-security/main amd64 libx11-data all 2:1.7.2-1+deb11u2 [311 kB]�[0m
+2023-11-06T18:39:32.0838591Z �[37mGet:36 http://deb.debian.org/debian-security bullseye-security/main amd64 libx11-dev amd64 2:1.7.2-1+deb11u2 [845 kB]�[0m
+2023-11-06T18:39:32.0877775Z �[37mGet:37 http://deb.debian.org/debian-security bullseye-security/main amd64 libx11-6 amd64 2:1.7.2-1+deb11u2 [772 kB]�[0m
+2023-11-06T18:39:32.0916096Z �[37mGet:38 http://deb.debian.org/debian bullseye/main amd64 openssl amd64 1.1.1w-0+deb11u1 [859 kB]�[0m
+2023-11-06T18:39:32.2337605Z �[31mdebconf: delaying package configuration, since apt-utils is not installed�[0m
+2023-11-06T18:39:32.2671631Z �[37mFetched 25.7 MB in 0s (118 MB/s)�[0m
+2023-11-06T18:39:32.2852868Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:32.2898227Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:32.2898839Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:32.2899160Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:32.2904019Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:32.2911095Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:32.2911452Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:32.2918482Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:32.2918851Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:32.2924241Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:32.2932376Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:32.2932739Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:32.2939817Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:32.2940188Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:32.2946733Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:32.2954714Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:32.2962691Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:32.2975190Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:32.2991989Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:32.3009750Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:32.3021903Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:32.3027094Z �[37m(Reading database ... 20487 files and directories currently installed.)�[0m
+2023-11-06T18:39:32.3033723Z �[37mPreparing to unpack .../base-files_11.1+deb11u8_amd64.deb ...�[0m
+2023-11-06T18:39:32.3068469Z �[37mUnpacking base-files (11.1+deb11u8) over (11.1+deb11u7) ...�[0m
+2023-11-06T18:39:32.3651813Z �[37mSetting up base-files (11.1+deb11u8) ...�[0m
+2023-11-06T18:39:32.3661185Z �[37mInstalling new version of config file /etc/debian_version ...�[0m
+2023-11-06T18:39:32.4039311Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:32.4066940Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:32.4076220Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:32.4076645Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:32.4076979Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:32.4126032Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:32.4130811Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:32.4131183Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:32.4131516Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:32.4131846Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:32.4208271Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:32.4208740Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:32.4209077Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:32.4209394Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:32.4209724Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:32.4210053Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:32.4210378Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:32.4210691Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:32.4211015Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:32.4211341Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:32.4247912Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:32.4248932Z �[37m(Reading database ... 20487 files and directories currently installed.)�[0m
+2023-11-06T18:39:32.4252825Z �[37mPreparing to unpack .../dpkg_1.20.13_amd64.deb ...�[0m
+2023-11-06T18:39:32.4287415Z �[37mUnpacking dpkg (1.20.13) over (1.20.12) ...�[0m
+2023-11-06T18:39:32.6620778Z �[37mSetting up dpkg (1.20.13) ...�[0m
+2023-11-06T18:39:32.6893979Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:32.6917857Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:32.6924748Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:32.6928930Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:32.6929300Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:32.6933260Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:32.6933627Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:32.6937236Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:32.6937580Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:32.6941401Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:32.6941768Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:32.6945777Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:32.6946119Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:32.6954849Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:32.6965723Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:32.6973674Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:32.6986752Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:32.6998274Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:32.7016189Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:32.7031933Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:32.7043860Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:32.7050590Z �[37m(Reading database ... 20487 files and directories currently installed.)�[0m
+2023-11-06T18:39:32.7057213Z �[37mPreparing to unpack .../ncurses-bin_6.2+20201114-2+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:32.7092146Z �[37mUnpacking ncurses-bin (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:32.7605046Z �[37mSetting up ncurses-bin (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:32.7851506Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:32.7867795Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:32.7868198Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:32.7868518Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:32.7868853Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:32.7869183Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:32.7869512Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:32.7869825Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:32.7870153Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:32.7870478Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:32.7870803Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:32.7871115Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:32.7871442Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:32.7896503Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:32.7909478Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:32.7920840Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:32.7937719Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:32.7966655Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:32.7980262Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:32.8005649Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:32.8024590Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:32.8027983Z �[37m(Reading database ... 20487 files and directories currently installed.)�[0m
+2023-11-06T18:39:32.8043169Z �[37mPreparing to unpack .../libc6-dev_2.31-13+deb11u7_amd64.deb ...�[0m
+2023-11-06T18:39:32.8092678Z �[37mUnpacking libc6-dev:amd64 (2.31-13+deb11u7) over (2.31-13+deb11u6) ...�[0m
+2023-11-06T18:39:33.4765207Z �[37mPreparing to unpack .../libc-dev-bin_2.31-13+deb11u7_amd64.deb ...�[0m
+2023-11-06T18:39:33.4803803Z �[37mUnpacking libc-dev-bin (2.31-13+deb11u7) over (2.31-13+deb11u6) ...�[0m
+2023-11-06T18:39:33.5146225Z �[37mPreparing to unpack .../linux-libc-dev_5.10.197-1_amd64.deb ...�[0m
+2023-11-06T18:39:33.5178320Z �[37mUnpacking linux-libc-dev:amd64 (5.10.197-1) over (5.10.179-2) ...�[0m
+2023-11-06T18:39:34.3993612Z �[37mPreparing to unpack .../libc6_2.31-13+deb11u7_amd64.deb ...�[0m
+2023-11-06T18:39:34.4960319Z �[37mUnpacking libc6:amd64 (2.31-13+deb11u7) over (2.31-13+deb11u6) ...�[0m
+2023-11-06T18:39:34.9753893Z �[37mSetting up libc6:amd64 (2.31-13+deb11u7) ...�[0m
+2023-11-06T18:39:36.1066792Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.1086487Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.1091078Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.1095299Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.1099592Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.1103892Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.1108529Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.1112617Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.1123558Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.1127802Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.1133557Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.1138342Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.1142718Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.1147659Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.1152404Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.1228699Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.1229087Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.1229561Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.1229903Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.1230232Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.1230559Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.1231103Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.1231846Z �[37mPreparing to unpack .../libc-bin_2.31-13+deb11u7_amd64.deb ...�[0m
+2023-11-06T18:39:36.1263090Z �[37mUnpacking libc-bin (2.31-13+deb11u7) over (2.31-13+deb11u6) ...�[0m
+2023-11-06T18:39:36.2595562Z �[37mSetting up libc-bin (2.31-13+deb11u7) ...�[0m
+2023-11-06T18:39:36.3051514Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.3071804Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.3081774Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.3090039Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.3098389Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.3103772Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.3114697Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.3120005Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.3126676Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.3132100Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.3137770Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.3143067Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.3148388Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.3154412Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.3160826Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.3167099Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.3181227Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.3188179Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.3188633Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.3188968Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.3189304Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.3239525Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.3240412Z �[37mPreparing to unpack .../ncurses-base_6.2+20201114-2+deb11u2_all.deb ...�[0m
+2023-11-06T18:39:36.3241318Z �[37mUnpacking ncurses-base (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:36.3896502Z �[37mSetting up ncurses-base (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:36.4166316Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.4191916Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.4197071Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.4200695Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.4205647Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.4209072Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.4212631Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.4215743Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.4218980Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.4222091Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.4225349Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.4228553Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.4231661Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.4237412Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.4248629Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.4257104Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.4269841Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.4282713Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.4300875Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.4323328Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.4331256Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.4337094Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.4349618Z �[37mPreparing to unpack .../libsystemd0_247.3-7+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:36.4395953Z �[37mUnpacking libsystemd0:amd64 (247.3-7+deb11u4) over (247.3-7+deb11u2) ...�[0m
+2023-11-06T18:39:36.4984257Z �[37mSetting up libsystemd0:amd64 (247.3-7+deb11u4) ...�[0m
+2023-11-06T18:39:36.5247861Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.5272181Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.5272845Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.5274809Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.5275266Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.5275603Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.5275995Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.5276314Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.5276669Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.5276996Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.5277321Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.5277633Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.5277957Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.5301175Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.5312604Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.5321241Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.5335779Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.5349118Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.5370233Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.5389441Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.5401962Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.5402801Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.5413132Z �[37mPreparing to unpack .../adduser_3.118+deb11u1_all.deb ...�[0m
+2023-11-06T18:39:36.5440481Z �[37mUnpacking adduser (3.118+deb11u1) over (3.118) ...�[0m
+2023-11-06T18:39:36.6405123Z �[37mSetting up adduser (3.118+deb11u1) ...�[0m
+2023-11-06T18:39:36.7439696Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.7467437Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.7467860Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.7468196Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.7468529Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.7468859Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.7469171Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.7469500Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.7469827Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.7470152Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.7470464Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.7470790Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.7471117Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.7491116Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.7503033Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.7511813Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.7527370Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.7540058Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.7558687Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.7577767Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.7588983Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.7589595Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.7601252Z �[37mPreparing to unpack .../libk5crypto3_1.18.3-6+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:36.7634555Z �[37mUnpacking libk5crypto3:amd64 (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...�[0m
+2023-11-06T18:39:36.7977050Z �[37mSetting up libk5crypto3:amd64 (1.18.3-6+deb11u4) ...�[0m
+2023-11-06T18:39:36.8207472Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.8230872Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.8235229Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.8239123Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.8240596Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.8244549Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.8247938Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.8254682Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.8258280Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.8261848Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.8265203Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.8270833Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.8274215Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.8278770Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.8282379Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.8287616Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.8295717Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.8310353Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.8326052Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.8346178Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.8356190Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.8362639Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.8370168Z �[37mPreparing to unpack .../libkrb5support0_1.18.3-6+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:36.8401355Z �[37mUnpacking libkrb5support0:amd64 (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...�[0m
+2023-11-06T18:39:36.8698368Z �[37mSetting up libkrb5support0:amd64 (1.18.3-6+deb11u4) ...�[0m
+2023-11-06T18:39:36.8931826Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:36.8959730Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:36.8960148Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:36.8960482Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:36.8960798Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:36.8961130Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:36.8961484Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:36.8961808Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:36.8962121Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:36.8962839Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:36.8963181Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:36.8963504Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:36.8963816Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:36.8986134Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:36.8997950Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:36.9007537Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:36.9021832Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:36.9037717Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:36.9056335Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:36.9075823Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:36.9085959Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:36.9093819Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:36.9100549Z �[37mPreparing to unpack .../libkrb5-3_1.18.3-6+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:36.9134321Z �[37mUnpacking libkrb5-3:amd64 (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...�[0m
+2023-11-06T18:39:36.9747278Z �[37mSetting up libkrb5-3:amd64 (1.18.3-6+deb11u4) ...�[0m
+2023-11-06T18:39:36.9997860Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:37.0023915Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:37.0024338Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:37.0024670Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:37.0024997Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:37.0025312Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:37.0025637Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:37.0025963Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:37.0026287Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:37.0026598Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:37.0026925Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:37.0027492Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:37.0027818Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:37.0033055Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:37.0043568Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:37.0052962Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:37.0067633Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:37.0083571Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:37.0099731Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:37.0118543Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:37.0128942Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:37.0129553Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:37.0139271Z �[37mPreparing to unpack .../libgssapi-krb5-2_1.18.3-6+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:37.0174775Z �[37mUnpacking libgssapi-krb5-2:amd64 (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...�[0m
+2023-11-06T18:39:37.0585367Z �[37mSetting up libgssapi-krb5-2:amd64 (1.18.3-6+deb11u4) ...�[0m
+2023-11-06T18:39:37.0850134Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:37.0869969Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:37.0877556Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:37.0882224Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:37.0886919Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:37.0892233Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:37.0896559Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:37.0901268Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:37.0905741Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:37.0910980Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:37.0915451Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:37.0920078Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:37.0926274Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:37.0931617Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:37.0939311Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:37.0939723Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:37.0940060Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:37.0940386Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:37.0949659Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:37.0969537Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:37.0975854Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:37.0984601Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:37.0989616Z �[37mPreparing to unpack .../libssl-dev_1.1.1w-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:37.1018547Z �[37mUnpacking libssl-dev:amd64 (1.1.1w-0+deb11u1) over (1.1.1n-0+deb11u5) ...�[0m
+2023-11-06T18:39:37.3629218Z �[37mPreparing to unpack .../libssl1.1_1.1.1w-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:37.3660582Z �[37mUnpacking libssl1.1:amd64 (1.1.1w-0+deb11u1) over (1.1.1n-0+deb11u5) ...�[0m
+2023-11-06T18:39:37.5162138Z �[37mSetting up libssl1.1:amd64 (1.1.1w-0+deb11u1) ...�[0m
+2023-11-06T18:39:37.6129809Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:37.6158515Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:37.6172252Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:37.6177174Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:37.6181059Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:37.6185084Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:37.6189572Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:37.6193119Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:37.6196900Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:37.6200864Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:37.6206124Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:37.6210467Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:37.6215316Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:37.6219988Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:37.6220352Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:37.6220725Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:37.6221285Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:37.6221626Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:37.6221954Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:37.6230638Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:37.6239513Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:37.6244208Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:37.6250582Z �[37mPreparing to unpack .../libncurses-dev_6.2+20201114-2+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:37.6280397Z �[37mUnpacking libncurses-dev:amd64 (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:37.7286237Z �[37mPreparing to unpack .../libncurses6_6.2+20201114-2+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:37.7316624Z �[37mUnpacking libncurses6:amd64 (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:37.7651762Z �[37mPreparing to unpack .../libncursesw6_6.2+20201114-2+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:37.7686421Z �[37mUnpacking libncursesw6:amd64 (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:37.8043126Z �[37mPreparing to unpack .../libtinfo6_6.2+20201114-2+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:37.8076716Z �[37mUnpacking libtinfo6:amd64 (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...�[0m
+2023-11-06T18:39:37.8484990Z �[37mSetting up libtinfo6:amd64 (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:37.8718364Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:37.8743130Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:37.8743508Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:37.8743844Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:37.8744171Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:37.8744486Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:37.8744816Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:37.8745184Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:37.8745511Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:37.8745844Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:37.8746184Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:37.8746512Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:37.8746838Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:37.8756684Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:37.8769234Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:37.8779088Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:37.8794184Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:37.8810600Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:37.8827177Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:37.8847884Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:37.8858873Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:37.8859477Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:37.8871114Z �[37mPreparing to unpack .../libudev1_247.3-7+deb11u4_amd64.deb ...�[0m
+2023-11-06T18:39:37.8909576Z �[37mUnpacking libudev1:amd64 (247.3-7+deb11u4) over (247.3-7+deb11u2) ...�[0m
+2023-11-06T18:39:37.9285687Z �[37mSetting up libudev1:amd64 (247.3-7+deb11u4) ...�[0m
+2023-11-06T18:39:37.9518312Z �[37m(Reading database ... �[0m
+2023-11-06T18:39:37.9539486Z �[37m(Reading database ... 5%�[0m
+2023-11-06T18:39:37.9544701Z �[37m(Reading database ... 10%�[0m
+2023-11-06T18:39:37.9549250Z �[37m(Reading database ... 15%�[0m
+2023-11-06T18:39:37.9555623Z �[37m(Reading database ... 20%�[0m
+2023-11-06T18:39:37.9560891Z �[37m(Reading database ... 25%�[0m
+2023-11-06T18:39:37.9567202Z �[37m(Reading database ... 30%�[0m
+2023-11-06T18:39:37.9572476Z �[37m(Reading database ... 35%�[0m
+2023-11-06T18:39:37.9578203Z �[37m(Reading database ... 40%�[0m
+2023-11-06T18:39:37.9583668Z �[37m(Reading database ... 45%�[0m
+2023-11-06T18:39:37.9593214Z �[37m(Reading database ... 50%�[0m
+2023-11-06T18:39:37.9593586Z �[37m(Reading database ... 55%�[0m
+2023-11-06T18:39:37.9638559Z �[37m(Reading database ... 60%�[0m
+2023-11-06T18:39:37.9639083Z �[37m(Reading database ... 65%�[0m
+2023-11-06T18:39:37.9639704Z �[37m(Reading database ... 70%�[0m
+2023-11-06T18:39:37.9640037Z �[37m(Reading database ... 75%�[0m
+2023-11-06T18:39:37.9655652Z �[37m(Reading database ... 80%�[0m
+2023-11-06T18:39:37.9656507Z �[37m(Reading database ... 85%�[0m
+2023-11-06T18:39:37.9657022Z �[37m(Reading database ... 90%�[0m
+2023-11-06T18:39:37.9658917Z �[37m(Reading database ... 95%�[0m
+2023-11-06T18:39:37.9659497Z �[37m(Reading database ... 100%�[0m
+2023-11-06T18:39:37.9660375Z �[37m(Reading database ... 20485 files and directories currently installed.)�[0m
+2023-11-06T18:39:37.9661197Z �[37mPreparing to unpack .../00-curl_7.74.0-1.3+deb11u10_amd64.deb ...�[0m
+2023-11-06T18:39:37.9690433Z �[37mUnpacking curl (7.74.0-1.3+deb11u10) over (7.74.0-1.3+deb11u7) ...�[0m
+2023-11-06T18:39:38.0109063Z �[37mPreparing to unpack .../01-libcurl4_7.74.0-1.3+deb11u10_amd64.deb ...�[0m
+2023-11-06T18:39:38.0141332Z �[37mUnpacking libcurl4:amd64 (7.74.0-1.3+deb11u10) over (7.74.0-1.3+deb11u7) ...�[0m
+2023-11-06T18:39:38.0655174Z �[37mPreparing to unpack .../02-dpkg-dev_1.20.13_all.deb ...�[0m
+2023-11-06T18:39:38.0696571Z �[37mUnpacking dpkg-dev (1.20.13) over (1.20.12) ...�[0m
+2023-11-06T18:39:38.3252926Z �[37mPreparing to unpack .../03-libdpkg-perl_1.20.13_all.deb ...�[0m
+2023-11-06T18:39:38.3289889Z �[37mUnpacking libdpkg-perl (1.20.13) over (1.20.12) ...�[0m
+2023-11-06T18:39:38.4891048Z �[37mPreparing to unpack .../04-libbsd-dev_0.11.3-1+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:38.4921084Z �[37mUnpacking libbsd-dev:amd64 (0.11.3-1+deb11u1) over (0.11.3-1) ...�[0m
+2023-11-06T18:39:38.6080555Z �[37mPreparing to unpack .../05-libbsd0_0.11.3-1+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:38.6110086Z �[37mUnpacking libbsd0:amd64 (0.11.3-1+deb11u1) over (0.11.3-1) ...�[0m
+2023-11-06T18:39:38.6433384Z �[37mPreparing to unpack .../06-libcurl3-gnutls_7.74.0-1.3+deb11u10_amd64.deb ...�[0m
+2023-11-06T18:39:38.6471698Z �[37mUnpacking libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u10) over (7.74.0-1.3+deb11u7) ...�[0m
+2023-11-06T18:39:38.6985478Z �[37mPreparing to unpack .../07-libmariadb-dev-compat_1%3a10.5.21-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:38.7014910Z �[37mUnpacking libmariadb-dev-compat:amd64 (1:10.5.21-0+deb11u1) over (1:10.5.19-0+deb11u2) ...�[0m
+2023-11-06T18:39:38.7284331Z �[37mPreparing to unpack .../08-mariadb-common_1%3a10.5.21-0+deb11u1_all.deb ...�[0m
+2023-11-06T18:39:38.7347687Z �[37mUnpacking mariadb-common (1:10.5.21-0+deb11u1) over (1:10.5.19-0+deb11u2) ...�[0m
+2023-11-06T18:39:38.7591519Z �[37mPreparing to unpack .../09-libmariadb-dev_1%3a10.5.21-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:38.7623184Z �[37mUnpacking libmariadb-dev (1:10.5.21-0+deb11u1) over (1:10.5.19-0+deb11u2) ...�[0m
+2023-11-06T18:39:38.8217336Z �[37mPreparing to unpack .../10-libmariadb3_1%3a10.5.21-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:38.8255427Z �[37mUnpacking libmariadb3:amd64 (1:10.5.21-0+deb11u1) over (1:10.5.19-0+deb11u2) ...�[0m
+2023-11-06T18:39:38.8641996Z �[37mPreparing to unpack .../11-libwebp6_0.6.1-2.1+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:38.8672875Z �[37mUnpacking libwebp6:amd64 (0.6.1-2.1+deb11u2) over (0.6.1-2.1+deb11u1) ...�[0m
+2023-11-06T18:39:38.9085623Z �[37mPreparing to unpack .../12-libx11-data_2%3a1.7.2-1+deb11u2_all.deb ...�[0m
+2023-11-06T18:39:38.9119105Z �[37mUnpacking libx11-data (2:1.7.2-1+deb11u2) over (2:1.7.2-1+deb11u1) ...�[0m
+2023-11-06T18:39:39.0947636Z �[37mPreparing to unpack .../13-libx11-dev_2%3a1.7.2-1+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:39.0980490Z �[37mUnpacking libx11-dev:amd64 (2:1.7.2-1+deb11u2) over (2:1.7.2-1+deb11u1) ...�[0m
+2023-11-06T18:39:39.2012120Z �[37mPreparing to unpack .../14-libx11-6_2%3a1.7.2-1+deb11u2_amd64.deb ...�[0m
+2023-11-06T18:39:39.2047428Z �[37mUnpacking libx11-6:amd64 (2:1.7.2-1+deb11u2) over (2:1.7.2-1+deb11u1) ...�[0m
+2023-11-06T18:39:39.2868833Z �[37mPreparing to unpack .../15-openssl_1.1.1w-0+deb11u1_amd64.deb ...�[0m
+2023-11-06T18:39:39.2911250Z �[37mUnpacking openssl (1.1.1w-0+deb11u1) over (1.1.1n-0+deb11u5) ...�[0m
+2023-11-06T18:39:39.4309290Z �[37mSetting up linux-libc-dev:amd64 (5.10.197-1) ...�[0m
+2023-11-06T18:39:39.4343644Z �[37mSetting up libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u10) ...�[0m
+2023-11-06T18:39:39.4377794Z �[37mSetting up mariadb-common (1:10.5.21-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.4499769Z �[37mSetting up libx11-data (2:1.7.2-1+deb11u2) ...�[0m
+2023-11-06T18:39:39.4530575Z �[37mSetting up libncurses6:amd64 (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:39.4559940Z �[37mSetting up libssl-dev:amd64 (1.1.1w-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.4592389Z �[37mSetting up libwebp6:amd64 (0.6.1-2.1+deb11u2) ...�[0m
+2023-11-06T18:39:39.4627448Z �[37mSetting up libmariadb3:amd64 (1:10.5.21-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.4662133Z �[37mSetting up libncursesw6:amd64 (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:39.4698104Z �[37mSetting up libdpkg-perl (1.20.13) ...�[0m
+2023-11-06T18:39:39.4736869Z �[37mSetting up libmariadb-dev (1:10.5.21-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.4766342Z �[37mSetting up libcurl4:amd64 (7.74.0-1.3+deb11u10) ...�[0m
+2023-11-06T18:39:39.4808345Z �[37mSetting up libx11-6:amd64 (2:1.7.2-1+deb11u2) ...�[0m
+2023-11-06T18:39:39.4844450Z �[37mSetting up curl (7.74.0-1.3+deb11u10) ...�[0m
+2023-11-06T18:39:39.4881399Z �[37mSetting up libc-dev-bin (2.31-13+deb11u7) ...�[0m
+2023-11-06T18:39:39.4917774Z �[37mSetting up openssl (1.1.1w-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.4983219Z �[37mSetting up libbsd0:amd64 (0.11.3-1+deb11u1) ...�[0m
+2023-11-06T18:39:39.5021697Z �[37mSetting up libbsd-dev:amd64 (0.11.3-1+deb11u1) ...�[0m
+2023-11-06T18:39:39.5052484Z �[37mSetting up libmariadb-dev-compat:amd64 (1:10.5.21-0+deb11u1) ...�[0m
+2023-11-06T18:39:39.5087071Z �[37mSetting up libx11-dev:amd64 (2:1.7.2-1+deb11u2) ...�[0m
+2023-11-06T18:39:39.5120238Z �[37mSetting up dpkg-dev (1.20.13) ...�[0m
+2023-11-06T18:39:39.5176101Z �[37mSetting up libc6-dev:amd64 (2.31-13+deb11u7) ...�[0m
+2023-11-06T18:39:39.5211637Z �[37mSetting up libncurses-dev:amd64 (6.2+20201114-2+deb11u2) ...�[0m
+2023-11-06T18:39:39.5250395Z �[37mProcessing triggers for libc-bin (2.31-13+deb11u7) ...�[0m
+2023-11-06T18:39:40.0531821Z �[37mReading package lists...�[0m
+2023-11-06T18:39:40.1860359Z �[37mBuilding dependency tree...�[0m
+2023-11-06T18:39:40.1867234Z �[37mReading state information...�[0m
+2023-11-06T18:39:40.3235216Z �[37mgit is already the newest version (1:2.30.2-1+deb11u2).�[0m
+2023-11-06T18:39:40.3244747Z �[37m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.�[0m
+2023-11-06T18:39:40.3310896Z �[37mDownloading and extracting 'nodejs' version '20.9.0' to '/opt/nodejs/20.9.0'...�[0m
+2023-11-06T18:39:40.3348243Z �[37mDetected image debian flavor: bullseye.�[0m
+2023-11-06T18:42:47.8864096Z �[37m�[0m
+2023-11-06T18:42:47.8884800Z �[37m�[0m
+2023-11-06T18:42:47.8916634Z �[37m---End of Oryx build logs---�[0m
+2023-11-06T18:42:47.8919736Z �[31mOryx has failed to build the solution.�[0m
+2023-11-06T18:42:48.0812812Z �[37m�[0m
+2023-11-06T18:42:48.0813970Z �[33mFor further information, please visit the Azure Static Web Apps documentation at https://docs.microsoft.com/en-us/azure/static-web-apps/�[0m
+2023-11-06T18:42:48.0815961Z �[33mIf you believe this behavior is unexpected, please raise a GitHub issue at https://github.com/azure/static-web-apps/issues/�[0m
+2023-11-06T18:42:48.0816936Z �[33mExiting�[0m
+2023-11-06T18:42:48.2120491Z ##[error]Error: The process '/usr/bin/bash' failed with exit code 1
+2023-11-06T18:42:48.2184560Z ##[section]Finishing: AzureStaticWebApp
