@@ -1,0 +1,29 @@
+MSBuild version 17.4.8+6918b863a for .NET                                                                                                                                                         
+  Determining projects to restore...                                                                                                                                                              
+  Restored /opt/tmp/oryx-repo/tests/BuildScriptGenerator.Tests/BuildScriptGenerator.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/BuildScriptGeneratorCli.Tests/BuildScriptGeneratorCli.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/Oryx.Common.Tests/Common.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/Detector.Tests/Detector.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/BuildServer.Tests/BuildServer.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/BuildScriptGenerator.Common.Tests/BuildScriptGenerator.Common.Tests.csproj (in 2.32 sec).                                                    
+  Restored /opt/tmp/oryx-repo/tests/Oryx.RuntimeImage.Tests/Oryx.RuntimeImage.Tests.csproj (in 2.32 sec).
+  Restored /opt/tmp/oryx-repo/tests/Oryx.Tests.Common/Oryx.Tests.Common.csproj (in 2.32 sec).                                                                                                     
+  Restored /opt/tmp/oryx-repo/tests/Oryx.Integration.Tests/Oryx.Integration.Tests.csproj (in 2.32 sec).                                                     
+  Restored /opt/tmp/oryx-repo/tests/AutomationTests/Automation.Tests.csproj (in 2.32 sec).                                                                                                        
+  Restored /opt/tmp/oryx-repo/tests/Oryx.BuildImage.Tests/Oryx.BuildImage.Tests.csproj (in 2.32 sec).                                                                                             
+  Restored /opt/tmp/oryx-repo/tests/BuildScriptGeneratorCli.Tests/BuildScriptGeneratorCli.Tests.csproj (in 2.73 sec).                                                                             
+/opt/tmp/oryx-repo/src/BuildScriptGeneratorCli/BuildScriptGeneratorCli.csproj : error NU1101: Unable to find package Microsoft.NETCore.App.Host.ubuntu.22.04-x64. No packages exist with this id in source(s): nuget.org [/opt/tmp/oryx-repo/Oryx.sln]
+  Restored /opt/tmp/oryx-repo/src/Oryx.Common/Common.csproj (in 3.61 sec).
+  Restored /opt/tmp/oryx-repo/src/BuildServer/BuildServer.csproj (in 3.61 sec).
+  Restored /opt/tmp/oryx-repo/build/tools/SharedCodeGenerator/SharedCodeGenerator.csproj (in 3.61 sec).
+  Restored /opt/tmp/oryx-repo/build/tools/Automation/Automation.csproj (in 3.61 sec).
+  Restored /opt/tmp/oryx-repo/src/BuildScriptGenerator.Common/BuildScriptGenerator.Common.csproj (in 3.61 sec).
+  Restored /opt/tmp/oryx-repo/src/Detector/Detector.csproj (in 3.62 sec).
+  Restored /opt/tmp/oryx-repo/src/BuildScriptGenerator/BuildScriptGenerator.csproj (in 3.64 sec).
+  Failed to restore /opt/tmp/oryx-repo/src/BuildScriptGeneratorCli/BuildScriptGeneratorCli.csproj (in 3.65 sec).
+
+Build FAILED.
+
+/opt/tmp/oryx-repo/src/BuildScriptGeneratorCli/BuildScriptGeneratorCli.csproj : error NU1101: Unable to find package Microsoft.NETCore.App.Host.ubuntu.22.04-x64. No packages exist with this id in source(s): nuget.org [/opt/tmp/oryx-repo/Oryx.sln]
+    0 Warning(s)
+    1 Error(s)
