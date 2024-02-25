@@ -1,0 +1,86 @@
+11:41:54 PM testing124234: Starting deployment...
+11:41:56 PM testing124234: Creating zip package...
+11:41:56 PM testing124234: Zip package size: 3.75 kB
+11:41:54 PM testing124234: Fetching changes.
+11:41:55 PM testing124234: Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/1aef5e85-af84-406a-9215-dff0086cc290.zip (0.00 MB) to /tmp/zipdeploy/extracted
+11:41:57 PM testing124234: Updating submodules.
+11:41:58 PM testing124234: Preparing deployment for commit id '68704b96-4'.
+11:41:58 PM testing124234: PreDeployment: context.CleanOutputPath False
+11:41:58 PM testing124234: PreDeployment: context.OutputPath /home/site/wwwroot
+11:41:58 PM testing124234: Repository path is /tmp/zipdeploy/extracted
+11:41:58 PM testing124234: Running oryx build...
+11:41:58 PM testing124234: Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.9.7 -p packagedir=.python_packages/lib/site-packages
+11:41:59 PM testing124234: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+11:41:59 PM testing124234: You can report issues at https://github.com/Microsoft/Oryx/issues
+11:41:59 PM testing124234: Oryx Version: 0.2.20210120.1, Commit: 66c7820d7df527aaffabd2563a49ad57930999c9, ReleaseTagName: 20210120.1
+11:41:59 PM testing124234: Build Operation ID: |2JLrmJIE0Vo=.db19ac63_
+11:41:59 PM testing124234: Repository Commit : 68704b96-4c46-4c30-bf62-29de88faeecb
+11:41:59 PM testing124234: Detecting platforms...
+11:42:00 PM testing124234: Detected following platforms:
+11:42:00 PM testing124234:   python: 3.9.7
+11:42:00 PM testing124234: Version '3.9.7' of platform 'python' is not installed. Generating script to install it...
+11:42:00 PM testing124234: Source directory     : /tmp/zipdeploy/extracted
+11:42:00 PM testing124234: Destination directory: /home/site/wwwroot
+11:42:00 PM testing124234: Downloading and extracting 'python' version '3.9.7' to '/tmp/oryx/platforms/python/3.9.7'...
+11:42:01 PM testing124234: Downloaded in 1 sec(s).
+11:42:01 PM testing124234: Verifying checksum...
+11:42:02 PM testing124234: Extracting contents...
+11:42:04 PM testing124234: Done in 4 sec(s).
+11:42:04 PM testing124234: Python Version: /tmp/oryx/platforms/python/3.9.7/bin/python3.9
+11:42:04 PM testing124234: Running pip install...
+11:42:05 PM testing124234: [04:42:05+0000] Collecting azure-functions
+11:42:05 PM testing124234: [04:42:05+0000]   Downloading azure_functions-1.12.0-py3-none-any.whl (160 kB)
+11:42:05 PM testing124234: [04:42:05+0000] Installing collected packages: azure-functions
+11:42:05 PM testing124234: [04:42:05+0000] Successfully installed azure-functions-1.12.0
+11:42:05 PM testing124234: WARNING: You are using pip version 20.2.3; however, version 22.3.1 is available.
+11:42:05 PM testing124234: You should consider upgrading via the '/tmp/oryx/platforms/python/3.9.7/bin/python3.9 -m pip install --upgrade pip' command.
+11:42:05 PM testing124234: Done in 1 sec(s).
+11:42:05 PM testing124234: Preparing output...
+11:42:05 PM testing124234: Copying files to destination directory '/home/site/wwwroot'...
+11:42:05 PM testing124234: Done in 0 sec(s).
+11:42:05 PM testing124234: Removing existing manifest file
+11:42:05 PM testing124234: Creating a manifest file...
+11:42:05 PM testing124234: Manifest file created.
+11:42:05 PM testing124234: Done in 5 sec(s).
+11:42:07 PM testing124234: Running post deployment command(s)...
+11:42:07 PM testing124234: Generating summary of Oryx build
+11:42:07 PM testing124234: Deployment Log file does not exist in /tmp/oryx-build.log
+11:42:07 PM testing124234: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+11:42:07 PM testing124234: Triggering recycle (preview mode disabled).
+11:42:07 PM testing124234: Linux Consumption plan has a 1.5 GB memory limit on a remote build container.
+11:42:07 PM testing124234: To check our service limit, please visit https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale#service-limits
+11:42:07 PM testing124234: Writing the artifacts to a squashfs file
+11:42:07 PM testing124234: Parallel mksquashfs: Using 1 processor
+11:42:07 PM testing124234: Creating 4.0 filesystem on /home/site/artifacts/functionappartifact.squashfs, block size 131072.
+11:42:07 PM testing124234: [===============================================================|] 132/132 100%
+11:42:07 PM testing124234: Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+11:42:07 PM testing124234: 	compressed data, compressed metadata, compressed fragments, compressed xattrs
+11:42:07 PM testing124234: 	duplicates are removed
+11:42:07 PM testing124234: Filesystem size 315.78 Kbytes (0.31 Mbytes)
+11:42:07 PM testing124234: 	27.20% of uncompressed filesystem size (1160.89 Kbytes)
+11:42:07 PM testing124234: Inode table size 1401 bytes (1.37 Kbytes)
+11:42:07 PM testing124234: 	28.79% of uncompressed inode table size (4866 bytes)
+11:42:07 PM testing124234: Directory table size 1467 bytes (1.43 Kbytes)
+11:42:07 PM testing124234: 	37.07% of uncompressed directory table size (3957 bytes)
+11:42:07 PM testing124234: Number of duplicate files found 3
+11:42:07 PM testing124234: Number of inodes 152
+11:42:07 PM testing124234: Number of files 135
+11:42:07 PM testing124234: Number of fragments 11
+11:42:07 PM testing124234: Number of symbolic links  0
+11:42:07 PM testing124234: Number of device nodes 0
+11:42:07 PM testing124234: Number of fifo nodes 0
+11:42:07 PM testing124234: Number of socket nodes 0
+11:42:07 PM testing124234: Number of directories 17
+11:42:07 PM testing124234: Number of ids (unique uids + gids) 1
+11:42:07 PM testing124234: Number of uids 1
+11:42:07 PM testing124234: 	root (0)
+11:42:07 PM testing124234: Number of gids 1
+11:42:07 PM testing124234: 	root (0)
+11:42:07 PM testing124234: Creating placeholder blob for linux consumption function app...
+11:42:07 PM testing124234: SCM_RUN_FROM_PACKAGE placeholder blob scm-latest-testing124234.zip located
+11:42:07 PM testing124234: Uploading built content /home/site/artifacts/functionappartifact.squashfs for linux consumption function app...
+11:42:08 PM testing124234: Resetting all workers for testing124234.azurewebsites.net
+11:42:08 PM testing124234: Deployment successful. deployer = ms-azuretools-vscode deploymentPath = Functions App ZipDeploy. Extract zip. Remote build.
+11:42:36 PM testing124234: Syncing triggers...
+11:42:39 PM testing124234: Querying triggers...
+11:42:40 PM testing124234: No HTTP triggers found.
