@@ -1,0 +1,20 @@
+Downloading and extracting 'php-composer' version '2.0.8' to '/opt/php-composer/2.0.8'...
+Detected image debian flavor: bullseye.
+Downloaded in 0 sec(s).
+Verifying checksum...
+Extracting contents...
+performing sha512 checksum for: php-composer...
+Done in 0 sec(s).
+
+Removing existing manifest file
+Creating directory for command manifest file if it does not exist
+Creating a manifest file...
+Node Build Command Manifest file created.
+
+Using Node version:
+v16.20.2
+
+Using Npm version:
+8.19.4
+
+Running 'npm install'...
