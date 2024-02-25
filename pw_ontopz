@@ -1,0 +1,2 @@
+py -m pip install wheel
+py -m pip wheel --wheel-dir=/local/wheels -r requirements.txt
