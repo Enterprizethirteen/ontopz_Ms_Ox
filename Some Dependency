@@ -1,0 +1,1 @@
+git+https://myvcs.com/some_dependency@sometag#egg=SomeDependency
