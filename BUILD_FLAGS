@@ -1,0 +1,6 @@
+        Off,
+        None,
+        CompressModules,
+        UseExpressBuild,
+        UseTempDirectory,
+        DeploymentV2
