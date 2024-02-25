@@ -1,0 +1,105 @@
+---Oryx build logs---
+
+
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20231128.3, Commit: 0b76566110f0db32097b869761e056fd9b01848d, ReleaseTagName: 20231128.3
+
+Build Operation ID: b32e6cf61e1c3430
+OS Type           : bullseye
+Image Type        : jamstack
+
+Detecting platforms...
+Detected following platforms:
+  dotnet: 7.0.14
+Version '7.0.14' of platform 'dotnet' is not installed. Generating script to install it...
+
+
+Source directory     : /github/workspace/examples/Blazor/Api
+Destination directory: /bin/staticsites/bacb445d-2b45-4c86-9b18-a2f8bf373cac-swa-oryx/api
+
+Installing common platform dependencies...
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8062 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [265 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
+Fetched 8554 kB in 1s (6963 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.30.2-1+deb11u2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing dotnet specific dependencies...
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8062 kB]
+Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [265 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
+Fetched 8554 kB in 1s (8054 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libgcc-s1 is already the newest version (10.2.1-6).
+libstdc++6 is already the newest version (10.2.1-6).
+libgssapi-krb5-2 is already the newest version (1.18.3-6+deb11u4).
+libunwind8 is already the newest version (1.3.2-2).
+libuuid1 is already the newest version (2.36.1-8+deb11u1).
+zlib1g is already the newest version (1:1.2.11.dfsg-2+deb11u2).
+libc6 is already the newest version (2.31-13+deb11u7).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+Downloading and extracting 'dotnet' version '7.0.404' to '/opt/dotnet/7.0.404'...
+Detected image debian flavor: bullseye.
+Downloaded in 8 sec(s).
+Verifying checksum...
+Extracting contents...
+performing sha512 checksum for: dotnet...
+Done in 13 sec(s).
+
+image detector file exists, platform is dotnet..
+
+Using .NET Core SDK Version: 7.0.404
+"2024-01-31 13:34:26"|ERROR|
+Welcome to .NET 7.0!
+---------------------
+SDK Version: 7.0.404
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate run 'dotnet dev-certs https --trust' (Windows and macOS only).
+Learn about HTTPS: https://aka.ms/dotnet-https
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+  Determining projects to restore...
+/opt/dotnet/7.0.404/sdk/7.0.404/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(160,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 8.0.  Either target .NET 7.0 or lower, or use a version of the .NET SDK that supports .NET 8.0. Download the .NET SDK from https://aka.ms/dotnet/download [/github/workspace/src-webcil/MetadataReferenceService.Default/MetadataReferenceService.Default.csproj::TargetFramework=net8.0] | 1 | Please build your app locally before publishing. | https://docs.microsoft.com/en-us/azure/app-service/configure-language-dotnetcore?pivots=platform-linux
+
+
+---End of Oryx build logs---
+Oryx has failed to build the solution.
