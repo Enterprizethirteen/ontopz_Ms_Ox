@@ -1,0 +1,283 @@
+Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.10 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8dc317c1de442c5 --compress-destination-dir | tee /tmp/oryx-build.log
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20230508.1, Commit: 7fe2bf39b357dd68572b438a85ca50b5ecfb4592, ReleaseTagName: 20230508.1
+
+Build Operation ID: 1f4f63ee4d7ba8be
+Repository Commit : b2b85153-5739-4ffd-a1cf-8e1029835486
+OS Type           : bullseye
+Image Type        : githubactions
+
+Detecting platforms...
+Detected following platforms:
+  python: 3.10.13
+Version '3.10.13' of platform 'python' is not installed. Generating script to install it...
+
+Using intermediate directory '/tmp/8dc317c1de442c5'.
+
+Copying files to the intermediate directory...
+Done in 0 sec(s).
+
+Source directory     : /tmp/8dc317c1de442c5
+Destination directory: /home/site/wwwroot
+
+
+Downloading and extracting 'python' version '3.10.13' to '/tmp/oryx/platforms/python/3.10.13'...
+Detected image debian flavor: bullseye.
+Downloaded in 0 sec(s).
+Verifying checksum...
+Extracting contents...
+performing sha512 checksum for: python...
+Done in 3 sec(s).
+
+image detector file exists, platform is python..
+OS detector file exists, OS is bullseye..
+Python Version: /tmp/oryx/platforms/python/3.10.13/bin/python3.10
+Creating directory for command manifest file if it does not exist
+Removing existing manifest file
+Python Virtual Environment: antenv
+Creating virtual environment...
+Activating virtual environment...
+Running pip install...
+[18:54:02+0000] Collecting sentence-transformers==2.2.2
+[18:54:02+0000]   Downloading sentence-transformers-2.2.2.tar.gz (85 kB)
+[18:54:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 3.1 MB/s eta 0:00:00
+[18:54:02+0000]   Preparing metadata (setup.py): started
+[18:54:02+0000]   Preparing metadata (setup.py): finished with status 'done'
+[18:54:03+0000] Collecting fastapi==0.103.2
+[18:54:03+0000]   Downloading fastapi-0.103.2-py3-none-any.whl (66 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.3/66.3 kB 23.3 MB/s eta 0:00:00
+[18:54:03+0000] Collecting fastapi-utils==0.2.1
+[18:54:03+0000]   Downloading fastapi_utils-0.2.1-py3-none-any.whl (16 kB)
+[18:54:03+0000] Collecting uvicorn==0.23.2
+[18:54:03+0000]   Downloading uvicorn-0.23.2-py3-none-any.whl (59 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━��━━━━━━━━━ 59.5/59.5 kB 21.5 MB/s eta 0:00:00
+[18:54:03+0000] Collecting azure-storage-queue==12.6.0
+[18:54:03+0000]   Downloading azure_storage_queue-12.6.0-py3-none-any.whl (170 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 170.9/170.9 kB 51.3 MB/s eta 0:00:00
+[18:54:03+0000] Collecting azure-storage-blob==12.16.0
+[18:54:03+0000]   Downloading azure_storage_blob-12.16.0-py3-none-any.whl (387 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.0/388.0 kB 67.7 MB/s eta 0:00:00
+[18:54:03+0000] Collecting azure.search.documents==11.4.0b11
+[18:54:03+0000]   Downloading azure_search_documents-11.4.0b11-py3-none-any.whl (312 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 312.5/312.5 kB 85.1 MB/s eta 0:00:00
+[18:54:03+0000] Collecting azure-cosmos==4.3.1
+[18:54:03+0000]   Downloading azure_cosmos-4.3.1-py3-none-any.whl (222 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.8/222.8 kB 61.5 MB/s eta 0:00:00
+[18:54:03+0000] Collecting azure-core==1.26.4
+[18:54:03+0000]   Downloading azure_core-1.26.4-py3-none-any.whl (173 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.9/173.9 kB 54.5 MB/s eta 0:00:00
+[18:54:03+0000] Collecting tenacity==8.2.3
+[18:54:03+0000]   Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+[18:54:03+0000] Collecting openai==0.27.0
+[18:54:03+0000]   Downloading openai-0.27.0-py3-none-any.whl (70 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.1/70.1 kB 19.2 MB/s eta 0:00:00
+[18:54:03+0000] Collecting transformers<5.0.0,>=4.6.0
+[18:54:03+0000]   Downloading transformers-4.37.2-py3-none-any.whl (8.4 MB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.4/8.4 MB 91.6 MB/s eta 0:00:00
+[18:54:03+0000] Collecting tqdm
+[18:54:03+0000]   Downloading tqdm-4.66.2-py3-none-any.whl (78 kB)
+[18:54:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 26.1 MB/s eta 0:00:00
+[18:54:03+0000] Collecting torch>=1.6.0
+[18:54:03+0000]   Downloading torch-2.2.0-cp310-cp310-manylinux1_x86_64.whl (755.5 MB)
+[18:54:25+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 755.5/755.5 MB 811.0 kB/s eta 0:00:00
+[18:54:29+0000] Collecting torchvision
+[18:54:29+0000]   Downloading torchvision-0.17.0-cp310-cp310-manylinux1_x86_64.whl (6.9 MB)
+[18:54:29+0000]      ━━━━━━━━━━━━━━���━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 82.3 MB/s eta 0:00:00
+[18:54:30+0000] Collecting numpy
+[18:54:30+0000]   Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+[18:54:30+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 60.0 MB/s eta 0:00:00
+[18:54:30+0000] Collecting scikit-learn
+[18:54:30+0000]   Downloading scikit_learn-1.4.1.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+[18:54:30+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 76.1 MB/s eta 0:00:00
+[18:54:31+0000] Collecting scipy
+[18:54:31+0000]   Downloading scipy-1.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.4 MB)
+[18:54:31+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.4/38.4 MB 23.8 MB/s eta 0:00:00
+[18:54:31+0000] Collecting nltk
+[18:54:32+0000]   Downloading nltk-3.8.1-py3-none-any.whl (1.5 MB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 113.6 MB/s eta 0:00:00
+[18:54:32+0000] Collecting sentencepiece
+[18:54:32+0000]   Downloading sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 113.9 MB/s eta 0:00:00
+[18:54:32+0000] Collecting huggingface-hub>=0.4.0
+[18:54:32+0000]   Downloading huggingface_hub-0.20.3-py3-none-any.whl (330 kB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 330.1/330.1 kB 77.2 MB/s eta 0:00:00
+[18:54:32+0000] Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4
+[18:54:32+0000]   Downloading pydantic-2.6.1-py3-none-any.whl (394 kB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.8/394.8 kB 85.9 MB/s eta 0:00:00
+[18:54:32+0000] Collecting typing-extensions>=4.5.0
+[18:54:32+0000]   Downloading typing_extensions-4.9.0-py3-none-any.whl (32 kB)
+[18:54:32+0000] Collecting anyio<4.0.0,>=3.7.1
+[18:54:32+0000]   Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 25.7 MB/s eta 0:00:00
+[18:54:32+0000] Collecting starlette<0.28.0,>=0.27.0
+[18:54:32+0000]   Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+[18:54:32+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 15.7 MB/s eta 0:00:00
+[18:54:33+0000] Collecting sqlalchemy<2.0.0,>=1.3.12
+[18:54:33+0000]   Downloading SQLAlchemy-1.4.51-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+[18:54:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 112.1 MB/s eta 0:00:00
+[18:54:33+0000] Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4
+[18:54:33+0000]   Downloading pydantic-1.10.14-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+[18:54:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 113.1 MB/s eta 0:00:00
+[18:54:33+0000] Collecting h11>=0.8
+[18:54:33+0000]   Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+[18:54:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 15.2 MB/s eta 0:00:00
+[18:54:33+0000] Collecting click>=7.0
+[18:54:33+0000]   Downloading click-8.1.7-py3-none-any.whl (97 kB)
+[18:54:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 39.2 MB/s eta 0:00:00
+[18:54:33+0000] Collecting cryptography>=2.1.4
+[18:54:34+0000]   Downloading cryptography-42.0.3-cp39-abi3-manylinux_2_28_x86_64.whl (4.6 MB)
+[18:54:34+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 133.3 MB/s eta 0:00:00
+[18:54:34+0000] Collecting isodate>=0.6.1
+[18:54:34+0000]   Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+[18:54:34+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 11.6 MB/s eta 0:00:00
+[18:54:34+0000] Collecting azure-common~=1.1
+[18:54:34+0000]   Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+[18:54:34+0000] Collecting requests>=2.18.4
+[18:54:34+0000]   Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+[18:54:34+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 21.7 MB/s eta 0:00:00
+[18:54:34+0000] Collecting six>=1.11.0
+[18:54:34+0000]   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+[18:54:34+0000] Collecting aiohttp
+[18:54:34+0000]   Downloading aiohttp-3.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+[18:54:34+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 111.8 MB/s eta 0:00:00
+[18:54:35+0000] Collecting exceptiongroup
+[18:54:35+0000]   Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+[18:54:35+0000] Collecting sniffio>=1.1
+[18:54:35+0000]   Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+[18:54:35+0000] Collecting idna>=2.8
+[18:54:35+0000]   Downloading idna-3.6-py3-none-any.whl (61 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 20.6 MB/s eta 0:00:00
+[18:54:35+0000] Collecting cffi>=1.12
+[18:54:35+0000]   Downloading cffi-1.16.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 443.9/443.9 kB 90.0 MB/s eta 0:00:00
+[18:54:35+0000] Collecting packaging>=20.9
+[18:54:35+0000]   Downloading packaging-23.2-py3-none-any.whl (53 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 9.5 MB/s eta 0:00:00
+[18:54:35+0000] Collecting fsspec>=2023.5.0
+[18:54:35+0000]   Downloading fsspec-2024.2.0-py3-none-any.whl (170 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━���━━━━━━━━━━━━━━ 170.9/170.9 kB 51.9 MB/s eta 0:00:00
+[18:54:35+0000] Collecting pyyaml>=5.1
+[18:54:35+0000]   Downloading PyYAML-6.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (705 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 705.5/705.5 kB 103.0 MB/s eta 0:00:00
+[18:54:35+0000] Collecting filelock
+[18:54:35+0000]   Downloading filelock-3.13.1-py3-none-any.whl (11 kB)
+[18:54:35+0000] Collecting urllib3<3,>=1.21.1
+[18:54:35+0000]   Downloading urllib3-2.2.1-py3-none-any.whl (121 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 25.3 MB/s eta 0:00:00
+[18:54:35+0000] Collecting certifi>=2017.4.17
+[18:54:35+0000]   Downloading certifi-2024.2.2-py3-none-any.whl (163 kB)
+[18:54:35+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━���━━━━━━━━━ 163.8/163.8 kB 54.1 MB/s eta 0:00:00
+[18:54:36+0000] Collecting charset-normalizer<4,>=2
+[18:54:36+0000]   Downloading charset_normalizer-3.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (142 kB)
+[18:54:36+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 142.1/142.1 kB 49.2 MB/s eta 0:00:00
+[18:54:36+0000] Collecting greenlet!=0.4.17
+[18:54:36+0000]   Downloading greenlet-3.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (616 kB)
+[18:54:36+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 616.0/616.0 kB 93.4 MB/s eta 0:00:00
+[18:54:36+0000] Collecting nvidia-cudnn-cu12==8.9.2.26
+[18:54:36+0000]   Downloading nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl (731.7 MB)
+[18:54:56+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━���━━ 731.7/731.7 MB 861.5 kB/s eta 0:00:00
+[18:54:59+0000] Collecting nvidia-nccl-cu12==2.19.3
+[18:54:59+0000]   Downloading nvidia_nccl_cu12-2.19.3-py3-none-manylinux1_x86_64.whl (166.0 MB)
+[18:55:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.0/166.0 MB 5.4 MB/s eta 0:00:00
+[18:55:02+0000] Collecting nvidia-cuda-runtime-cu12==12.1.105
+[18:55:02+0000]   Downloading nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (823 kB)
+[18:55:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 105.6 MB/s eta 0:00:00
+[18:55:02+0000] Collecting networkx
+[18:55:02+0000]   Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+[18:55:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 107.0 MB/s eta 0:00:00
+[18:55:02+0000] Collecting jinja2
+[18:55:02+0000]   Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+[18:55:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 44.0 MB/s eta 0:00:00
+[18:55:02+0000] Collecting nvidia-nvtx-cu12==12.1.105
+[18:55:02+0000]   Downloading nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (99 kB)
+[18:55:02+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 12.9 MB/s eta 0:00:00
+[18:55:03+0000] Collecting sympy
+[18:55:03+0000]   Downloading sympy-1.12-py3-none-any.whl (5.7 MB)
+[18:55:03+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 126.0 MB/s eta 0:00:00
+[18:55:03+0000] Collecting nvidia-cusparse-cu12==12.1.0.106
+[18:55:03+0000]   Downloading nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl (196.0 MB)
+[18:55:07+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 2.9 MB/s eta 0:00:00
+[18:55:08+0000] Collecting nvidia-cufft-cu12==11.0.2.54
+[18:55:08+0000]   Downloading nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl (121.6 MB)
+[18:55:13+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 2.7 MB/s eta 0:00:00
+[18:55:13+0000] Collecting nvidia-cublas-cu12==12.1.3.1
+[18:55:13+0000]   Downloading nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl (410.6 MB)
+[18:55:24+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 1.3 MB/s eta 0:00:00
+[18:55:26+0000] Collecting triton==2.2.0
+[18:55:26+0000]   Downloading triton-2.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (167.9 MB)
+[18:55:31+0000]      ━━━━━━━━━���━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 167.9/167.9 MB 2.6 MB/s eta 0:00:00
+[18:55:32+0000] Collecting nvidia-cuda-nvrtc-cu12==12.1.105
+[18:55:32+0000]   Downloading nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (23.7 MB)
+[18:55:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 30.4 MB/s eta 0:00:00
+[18:55:33+0000] Collecting nvidia-curand-cu12==10.3.2.106
+[18:55:33+0000]   Downloading nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl (56.5 MB)
+[18:55:34+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 15.1 MB/s eta 0:00:00
+[18:55:35+0000] Collecting nvidia-cusolver-cu12==11.4.5.107
+[18:55:35+0000]   Downloading nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl (124.2 MB)
+[18:55:39+0000]      ━━━━━━━━━━━━���━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 3.6 MB/s eta 0:00:00
+[18:55:39+0000] Collecting nvidia-cuda-cupti-cu12==12.1.105
+[18:55:39+0000]   Downloading nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl (14.1 MB)
+[18:55:39+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 56.8 MB/s eta 0:00:00
+[18:55:39+0000] Collecting nvidia-nvjitlink-cu12
+[18:55:39+0000]   Downloading nvidia_nvjitlink_cu12-12.3.101-py3-none-manylinux1_x86_64.whl (20.5 MB)
+[18:55:40+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 44.5 MB/s eta 0:00:00
+[18:55:41+0000] Collecting tokenizers<0.19,>=0.14
+[18:55:41+0000]   Downloading tokenizers-0.15.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+[18:55:41+0000]      ━━━━━━━━━━━━━━━━━���━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 80.6 MB/s eta 0:00:00
+[18:55:42+0000] Collecting regex!=2019.12.17
+[18:55:42+0000]   Downloading regex-2023.12.25-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (773 kB)
+[18:55:42+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 774.0/774.0 kB 63.2 MB/s eta 0:00:00
+[18:55:42+0000] Collecting safetensors>=0.4.1
+[18:55:42+0000]   Downloading safetensors-0.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+[18:55:42+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 114.4 MB/s eta 0:00:00
+[18:55:42+0000] Collecting attrs>=17.3.0
+[18:55:42+0000]   Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+[18:55:42+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 19.8 MB/s eta 0:00:00
+[18:55:42+0000] Collecting async-timeout<5.0,>=4.0
+[18:55:42+0000]   Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+[18:55:42+0000] Collecting aiosignal>=1.1.2
+[18:55:42+0000]   Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+[18:55:43+0000] Collecting multidict<7.0,>=4.5
+[18:55:43+0000]   Downloading multidict-6.0.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (124 kB)
+[18:55:43+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.3/124.3 kB 39.8 MB/s eta 0:00:00
+[18:55:43+0000] Collecting yarl<2.0,>=1.0
+[18:55:43+0000]   Downloading yarl-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (301 kB)
+[18:55:43+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.6/301.6 kB 69.7 MB/s eta 0:00:00
+[18:55:43+0000] Collecting frozenlist>=1.1.1
+[18:55:43+0000]   Downloading frozenlist-1.4.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (239 kB)
+[18:55:43+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.5/239.5 kB 70.5 MB/s eta 0:00:00
+[18:55:43+0000] Collecting joblib
+[18:55:43+0000]   Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+[18:55:43+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 82.8 MB/s eta 0:00:00
+[18:55:43+0000] Collecting threadpoolctl>=2.0.0
+[18:55:43+0000]   Downloading threadpoolctl-3.3.0-py3-none-any.whl (17 kB)
+[18:55:44+0000] Collecting pillow!=8.3.*,>=5.3.0
+[18:55:44+0000]   Downloading pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl (4.5 MB)
+[18:55:44+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 132.3 MB/s eta 0:00:00
+[18:55:44+0000] Collecting pycparser
+[18:55:44+0000]   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+[18:55:44+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 42.5 MB/s eta 0:00:00
+[18:55:44+0000] Collecting MarkupSafe>=2.0
+[18:55:44+0000]   Downloading MarkupSafe-2.1.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+[18:55:44+0000] Collecting mpmath>=0.19
+[18:55:44+0000]   Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+[18:55:44+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 102.6 MB/s eta 0:00:00
+[18:55:44+0000] Building wheels for collected packages: sentence-transformers
+[18:55:44+0000]   Building wheel for sentence-transformers (setup.py): started
+[18:55:45+0000]   Building wheel for sentence-transformers (setup.py): finished with status 'done'
+[18:55:45+0000]   Created wheel for sentence-transformers: filename=sentence_transformers-2.2.2-py3-none-any.whl size=125923 sha256=79f87d6b0dccac8c79ae47dff7972dbeda9360f1404c79b30e4a3fd3c28c6e32
+[18:55:45+0000]   Stored in directory: /usr/local/share/pip-cache/wheels/62/f2/10/1e606fd5f02395388f74e7462910fe851042f97238cbbd902f
+[18:55:45+0000] Successfully built sentence-transformers
+[18:55:46+0000] Installing collected packages: sentencepiece, mpmath, azure-common, urllib3, typing-extensions, tqdm, threadpoolctl, tenacity, sympy, sniffio, six, safetensors, regex, pyyaml, pycparser, pillow, packaging, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, multidict, MarkupSafe, joblib, idna, h11, greenlet, fsspec, frozenlist, filelock, exceptiongroup, click, charset-normalizer, certifi, attrs, async-timeout, yarl, uvicorn, triton, sqlalchemy, scipy, requests, pydantic, nvidia-cusparse-cu12, nvidia-cudnn-cu12, nltk, jinja2, isodate, cffi, anyio, aiosignal, starlette, scikit-learn, nvidia-cusolver-cu12, huggingface-hub, cryptography, azure-core, aiohttp, torch, tokenizers, openai, fastapi, azure-storage-queue, azure-storage-blob, azure.search.documents, azure-cosmos, transformers, torchvision, fastapi-utils, sentence-transformers
+[18:57:29+0000] Successfully installed MarkupSafe-2.1.5 aiohttp-3.9.3 aiosignal-1.3.1 anyio-3.7.1 async-timeout-4.0.3 attrs-23.2.0 azure-common-1.1.28 azure-core-1.26.4 azure-cosmos-4.3.1 azure-storage-blob-12.16.0 azure-storage-queue-12.6.0 azure.search.documents-11.4.0b11 certifi-2024.2.2 cffi-1.16.0 charset-normalizer-3.3.2 click-8.1.7 cryptography-42.0.3 exceptiongroup-1.2.0 fastapi-0.103.2 fastapi-utils-0.2.1 filelock-3.13.1 frozenlist-1.4.1 fsspec-2024.2.0 greenlet-3.0.3 h11-0.14.0 huggingface-hub-0.20.3 idna-3.6 isodate-0.6.1 jinja2-3.1.3 joblib-1.3.2 mpmath-1.3.0 multidict-6.0.5 networkx-3.2.1 nltk-3.8.1 numpy-1.26.4 nvidia-cublas-cu12-12.1.3.1 nvidia-cuda-cupti-cu12-12.1.105 nvidia-cuda-nvrtc-cu12-12.1.105 nvidia-cuda-runtime-cu12-12.1.105 nvidia-cudnn-cu12-8.9.2.26 nvidia-cufft-cu12-11.0.2.54 nvidia-curand-cu12-10.3.2.106 nvidia-cusolver-cu12-11.4.5.107 nvidia-cusparse-cu12-12.1.0.106 nvidia-nccl-cu12-2.19.3 nvidia-nvjitlink-cu12-12.3.101 nvidia-nvtx-cu12-12.1.105 openai-0.27.0 packaging-23.2 pillow-10.2.0 pycparser-2.21 pydantic-1.10.14 pyyaml-6.0.1 regex-2023.12.25 requests-2.31.0 safetensors-0.4.2 scikit-learn-1.4.1.post1 scipy-1.12.0 sentence-transformers-2.2.2 sentencepiece-0.2.0 six-1.16.0 sniffio-1.3.0 sqlalchemy-1.4.51 starlette-0.27.0 sympy-1.12 tenacity-8.2.3 threadpoolctl-3.3.0 tokenizers-0.15.2 torch-2.2.0 torchvision-0.17.0 tqdm-4.66.2 transformers-4.37.2 triton-2.2.0 typing-extensions-4.9.0 urllib3-2.2.1 uvicorn-0.23.2 yarl-1.9.4
+
+[notice] A new release of pip is available: 23.0.1 -> 24.0
+[notice] To update, run: pip install --upgrade pip
+Not a vso image, so not writing build commands
+Preparing output...
+
+Copying files to destination directory '/tmp/_preCompressedDestinationDir'...
+Done in 107 sec(s).
+Compressing content of directory '/tmp/_preCompressedDestinationDir'...
