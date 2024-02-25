@@ -1,1 +1,2 @@
 py -m pip install './somepackage-1.0-py2.py3-none-any.whl[my-extras]'
+python -m pip uninstall SomePackage
