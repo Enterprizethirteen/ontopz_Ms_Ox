@@ -1,1 +1,7 @@
-
+<Error>
+<Code>InvalidQueryParameterValue</Code>
+<Message>Value for one of the query parameters specified in the request URI is invalid. RequestId:0768c8c7-101e-0010-342c-68cd35000000 Time:2024-02-25T20:51:26.3694233Z</Message>
+<QueryParameterName>comp</QueryParameterName>
+<QueryParameterValue/>
+<Reason/>
+</Error>
