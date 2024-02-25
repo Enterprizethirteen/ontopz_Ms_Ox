@@ -1,0 +1,12 @@
+Running oryx build...
+Command: oryx build /tmp/zipdeploy/extracted -o /tmp/build/expressbuild --platform python --platform-version 3.8 -i /tmp/8da669726cad858 -p packagedir=.python_packages/lib/site-packages
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+Oryx Version: 0.2.20220308.[4](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:4), Commit: c92fa6a2d6fc14dc9646f80e2bb2e393a[5](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:5)cdc258, ReleaseTagName: 20220308.4
+Build Operation ID: |[6](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:6)uRUisqcsUc=.24a16c09_
+Repository Commit : 2[7](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:7)a7a1a7-9cc2-4e45-[8](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:8)7a6-0fea3d4[9](https://github.com/btf-org/flank-api/runs/7363820123?check_suite_focus=true#step:11:9)5ec6
+Detecting platforms...
+An unknown error has occurred. Check the diagnostic log for details.
+Remote build failed!
+Error: Process completed with exit code 1.
+##[debug]Finishing: Deploy the function
