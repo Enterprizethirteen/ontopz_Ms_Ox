@@ -1,0 +1,1 @@
+reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
