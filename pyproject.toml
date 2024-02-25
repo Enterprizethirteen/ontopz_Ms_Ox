@@ -1,0 +1,9 @@
+elif [ -e "pyproject.toml" ]
+    then
+        set +e
+        echo "Running pip install poetry..."
+        InstallPipCommand="pip install poetry"
+        printf %s " , $InstallPipCommand" >> "$COMMAND_MANIFEST_FILE"
+        pip install poetry
+        echo "Running poetry install..."
+        ....
