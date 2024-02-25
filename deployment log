@@ -1,0 +1,72 @@
+2023-10-31T12:50:59.953Z - Updating branch 'master'.
+2023-10-31T12:51:04.983Z - Updating submodules.
+2023-10-31T12:51:05.086Z - Preparing deployment for commit id 'XXXXXXXXX'.
+2023-10-31T12:51:05.338Z - PreDeployment: context.CleanOutputPath False
+2023-10-31T12:51:05.432Z - PreDeployment: context.OutputPath /home/site/wwwroot
+2023-10-31T12:51:05.535Z - Repository path is /home/site/repository
+2023-10-31T12:51:05.638Z - Running oryx build...
+2023-10-31T12:51:05.644Z - Command: oryx build /home/site/repository -o /home/site/wwwroot --platform python --platform-version 3.10 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8dbda100b9921ec --compress-destination-dir | tee /tmp/oryx-build.log
+2023-10-31T12:51:06.599Z - Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2023-10-31T12:51:06.614Z - You can report issues at https://github.com/Microsoft/Oryx/issues
+2023-10-31T12:51:06.643Z - Oryx Version: 0.2.20230508.1, Commit: 7fe2bf39b357dd68572b438a85ca50b5ecfb4592, ReleaseTagName: 20230508.1
+2023-10-31T12:51:06.658Z - Build Operation ID: 10aafab84d551a74
+2023-10-31T12:51:06.664Z - Repository Commit : XXXXXXXXXXXXXX
+2023-10-31T12:51:06.670Z - OS Type           : bullseye
+2023-10-31T12:51:06.677Z - Image Type        : githubactions
+2023-10-31T12:51:06.695Z - Detecting platforms...
+2023-10-31T12:51:15.575Z - Detected following platforms:
+2023-10-31T12:51:15.608Z -   nodejs: 16.20.2
+2023-10-31T12:51:15.613Z -   python: 3.10.8
+2023-10-31T12:51:15.618Z - Version '16.20.2' of platform 'nodejs' is not installed. Generating script to install it...
+2023-10-31T12:51:15.623Z - Version '3.10.8' of platform 'python' is not installed. Generating script to install it...
+2023-10-31T12:51:15.811Z - Using intermediate directory '/tmp/8dbda100b9921ec'.
+2023-10-31T12:51:15.837Z - Copying files to the intermediate directory...
+2023-10-31T12:51:17.447Z - Done in 2 sec(s).
+2023-10-31T12:51:17.465Z - Source directory     : /tmp/8dbda100b9921ec
+2023-10-31T12:51:17.470Z - Destination directory: /home/site/wwwroot
+2023-10-31T12:51:17.487Z - Downloading and extracting 'nodejs' version '16.20.2' to '/tmp/oryx/platforms/nodejs/16.20.2'...
+2023-10-31T12:51:17.496Z - Detected image debian flavor: bullseye.
+2023-10-31T12:51:18.418Z - Downloaded in 1 sec(s).
+2023-10-31T12:51:18.431Z - Verifying checksum...
+2023-10-31T12:51:18.465Z - Extracting contents...
+2023-10-31T12:51:19.688Z - performing sha512 checksum for: nodejs...
+2023-10-31T12:51:19.876Z - Done in 2 sec(s).
+2023-10-31T12:51:19.907Z - Downloading and extracting 'python' version '3.10.8' to '/tmp/oryx/platforms/python/3.10.8'...
+2023-10-31T12:51:19.913Z - Detected image debian flavor: bullseye.
+2023-10-31T12:51:21.326Z - Downloaded in 2 sec(s).
+2023-10-31T12:51:21.343Z - Verifying checksum...
+2023-10-31T12:51:21.349Z - Extracting contents...
+2023-10-31T12:51:23.829Z - performing sha512 checksum for: python...
+2023-10-31T12:51:24.147Z - Done in 5 sec(s).
+2023-10-31T12:51:24.180Z - image detector file exists, platform is python..
+2023-10-31T12:51:24.193Z - OS detector file exists, OS is bullseye..
+2023-10-31T12:51:24.298Z - Python Version: /tmp/oryx/platforms/python/3.10.8/bin/python3.10
+2023-10-31T12:51:24.305Z - Creating directory for command manifest file if it does not exist
+2023-10-31T12:51:24.311Z - Removing existing manifest file
+2023-10-31T12:51:24.335Z - Python Virtual Environment: antenv
+2023-10-31T12:51:24.341Z - Creating virtual environment...
+2023-10-31T12:51:30.102Z - Activating virtual environment...
+2023-10-31T12:51:30.114Z - Running pip install...
+(like 4 minutes installing python libraries)
+
+2023-10-31T12:55:37.571Z - Not a vso image, so not writing build commands
+2023-10-31T12:55:37.576Z - Preparing output...
+2023-10-31T12:55:37.586Z - Copying files to destination directory '/tmp/_preCompressedDestinationDir'...
+2023-10-31T12:57:07.095Z - Done in 93 sec(s).
+2023-10-31T12:57:07.109Z - Compressing content of directory '/tmp/_preCompressedDestinationDir'...
+2023-10-31T13:05:28.569Z - Copied the compressed output to '/home/site/wwwroot'
+2023-10-31T13:05:28.603Z - Removing existing manifest file
+2023-10-31T13:05:28.641Z - Creating a manifest file...
+2023-10-31T13:05:28.675Z - Manifest file created.
+2023-10-31T13:05:28.684Z - Copying .ostype to manifest output directory.
+2023-10-31T13:05:28.695Z - Done in 853 sec(s).
+2023-10-31T13:05:29.132Z - Running post deployment command(s)...
+2023-10-31T13:05:29.459Z - Generating summary of Oryx build
+2023-10-31T13:05:29.588Z - Parsing the build logs
+2023-10-31T13:05:29.703Z - Found 0 issue(s)
+2023-10-31T13:05:29.884Z - Build Summary :
+2023-10-31T13:05:29.973Z - ===============
+2023-10-31T13:05:30.067Z - Errors (0)
+2023-10-31T13:05:30.163Z - Warnings (0)
+2023-10-31T13:05:30.400Z - Triggering recycle (preview mode disabled).
+2023-10-31T13:05:30.534Z - Deployment successful. deployer =  deploymentPath = 
