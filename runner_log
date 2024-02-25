@@ -1,0 +1,166 @@
+[2022-07-15 19:19:15Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'Credentials': '/home/runner/runners/2.294.0/.credentials'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'Runner': '/home/runner/runners/2.294.0/.runner'
+[2022-07-15 19:19:15Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2022-07-15 19:19:15Z INFO Listener] RuntimeInformation: Linux 5.13.0-1031-azure #37~20.04.1-Ubuntu SMP Mon Jun 13 22:51:01 UTC 2022.
+[2022-07-15 19:19:15Z INFO Listener] Version: 2.294.0
+[2022-07-15 19:19:15Z INFO Listener] Commit: 709bd6113d2fca3a89a0fef11913ce4efd7b8cc5
+[2022-07-15 19:19:15Z INFO Listener] Culture: 
+[2022-07-15 19:19:15Z INFO Listener] UI Culture: 
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO Listener] Validating directory permissions for: '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO CommandLineParser] Parse
+[2022-07-15 19:19:15Z INFO CommandLineParser] Parsing 1 args
+[2022-07-15 19:19:15Z INFO CommandLineParser] parsing argument
+[2022-07-15 19:19:15Z INFO CommandLineParser] HasArgs: False
+[2022-07-15 19:19:15Z INFO CommandLineParser] Adding Command: run
+[2022-07-15 19:19:15Z INFO Listener] Arguments parsed
+[2022-07-15 19:19:15Z INFO Runner] ExecuteCommand
+[2022-07-15 19:19:15Z INFO ConfigurationStore] currentAssemblyLocation: /home/runner/runners/2.294.0/bin/Runner.Listener.dll
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] binPath: /home/runner/runners/2.294.0/bin
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] RootFolder: /home/runner/runners/2.294.0
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'Runner': '/home/runner/runners/2.294.0/.runner'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] ConfigFilePath: /home/runner/runners/2.294.0/.runner
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'Credentials': '/home/runner/runners/2.294.0/.credentials'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] CredFilePath: /home/runner/runners/2.294.0/.credentials
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/runner/runners/2.294.0/.credentials_migrated'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] MigratedCredFilePath: /home/runner/runners/2.294.0/.credentials_migrated
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:15Z INFO HostContext] Well known directory 'Root': '/home/runner/runners/2.294.0'
+[2022-07-15 19:19:15Z INFO HostContext] Well known config file 'Service': '/home/runner/runners/2.294.0/.service'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] ServiceConfigFilePath: /home/runner/runners/2.294.0/.service
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'help': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'version': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'check': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Command 'configure': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Command 'remove': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Command 'warmup': 'False'
+[2022-07-15 19:19:15Z INFO ConfigurationManager] LoadSettings
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured()
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-15 19:19:15Z INFO ConfigurationManager] Is configured: True
+[2022-07-15 19:19:15Z INFO ConfigurationStore] Read setting file: 357 chars
+[2022-07-15 19:19:15Z INFO ConfigurationManager] Settings Loaded
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-07-15 19:19:15Z INFO CommandSettings] Command 'run': 'True'
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured()
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-15 19:19:15Z INFO ConfigurationManager] Is configured: True
+[2022-07-15 19:19:15Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2022-07-15 19:19:15Z INFO Runner] Set runner startup type - Manual
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'once': 'False'
+[2022-07-15 19:19:15Z INFO CommandSettings] Flag 'once': 'False'
+[2022-07-15 19:19:15Z INFO Runner] RunAsync
+[2022-07-15 19:19:15Z INFO ConfigurationManager] LoadSettings
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured()
+[2022-07-15 19:19:15Z INFO ConfigurationStore] IsConfigured: True
+[2022-07-15 19:19:15Z INFO ConfigurationManager] Is configured: True
+[2022-07-15 19:19:15Z INFO ConfigurationManager] Settings Loaded
+[2022-07-15 19:19:15Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "GitHub Actions 2",
+  "SkipSessionRecover": true,
+  "PoolId": 2,
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/5dW5UDvYzvS1XiWkVUs0DFe2blbfZGJZvdJN446Z6l3TOgQG0u/",
+  "WorkFolder": "/home/runner/work",
+  "MonitorSocketAddress": "127.0.0.1:49100"
+}
+[2022-07-15 19:19:15Z INFO MessageListener] Loading Credentials
+[2022-07-15 19:19:15Z INFO ConfigurationStore] HasCredentials()
+[2022-07-15 19:19:15Z INFO ConfigurationStore] stored True
+[2022-07-15 19:19:15Z INFO CredentialManager] GetCredentialProvider
+[2022-07-15 19:19:15Z INFO CredentialManager] Creating type OAuthAccessToken
+[2022-07-15 19:19:15Z INFO CredentialManager] Creating credential type: OAuthAccessToken
+[2022-07-15 19:19:15Z INFO OAuthAccessTokenCredential] GetVssCredentials
+[2022-07-15 19:19:15Z INFO OAuthAccessTokenCredential] token retrieved: 1459 chars
+[2022-07-15 19:19:15Z INFO OAuthAccessTokenCredential] cred created
+[2022-07-15 19:19:15Z INFO MessageListener] Attempt to create session.
+[2022-07-15 19:19:15Z INFO MessageListener] Connecting to the Runner Server...
+[2022-07-15 19:19:15Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-07-15 19:19:16Z INFO MessageListener] VssConnection created
+[2022-07-15 19:19:16Z INFO Terminal] WRITE LINE: 
+[2022-07-15 19:19:16Z INFO Terminal] WRITE LINE: 
+[2022-07-15 19:19:16Z INFO MessageListener] Session created.
+[2022-07-15 19:19:16Z INFO Terminal] WRITE LINE: Current runner version: '2.294.0'
+[2022-07-15 19:19:16Z INFO Terminal] WRITE LINE: 2022-07-15 19:19:16Z: Listening for Jobs
+[2022-07-15 19:19:16Z ERR  JobNotification] Connection to monitor port 49100 failed!
+[2022-07-15 19:19:16Z ERR  JobNotification] System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (111): Connection refused [::ffff:127.0.0.1]:49100
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at GitHub.Runner.Common.JobNotification.ConnectMonitor(String monitorSocketAddress)
+[2022-07-15 19:19:16Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2022-07-15 19:19:20Z INFO MessageListener] Message '992' received from session '18a02e73-574c-4f82-9503-2c24b14d08b5'.
+[2022-07-15 19:19:20Z INFO Runner] Received job message of length 26181 from service, with hash 'b777a6299a2af8a089163b4df0b3fd6ae9c9a14e9bb64574c5657ba6113f2780'
+[2022-07-15 19:19:20Z INFO JobDispatcher] Job request 5444 for plan 2305a943-75c9-4a40-a0eb-083c7dc01f13 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2022-07-15 19:19:20Z INFO JobDispatcher] Pull OrchestrationId 2305a943-75c9-4a40-a0eb-083c7dc01f13.build.__default from JWT claims
+[2022-07-15 19:19:20Z INFO Terminal] WRITE LINE: 2022-07-15 19:19:20Z: Running job: build
+[2022-07-15 19:19:20Z INFO JobDispatcher] Start renew job request 5444 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2022-07-15 19:19:20Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:19:20Z INFO HostContext] Well known directory 'Bin': '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper] Starting process:
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   File name: '/home/runner/runners/2.294.0/bin/Runner.Worker'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 112 115'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Working directory: '/home/runner/runners/2.294.0/bin'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-07-15 19:19:20Z INFO ProcessInvokerWrapper] Process started with process id 1544, waiting for process exit.
+[2022-07-15 19:19:20Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2022-07-15 19:19:21Z INFO ProcessChannel] Sending message of length 26181, with hash 'b777a6299a2af8a089163b4df0b3fd6ae9c9a14e9bb64574c5657ba6113f2780'
+[2022-07-15 19:19:21Z INFO JobNotification] Entering JobStarted Notification
+[2022-07-15 19:19:21Z INFO JobNotification] Entering StartMonitor
+[2022-07-15 19:20:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:21:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:22:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:23:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:24:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:25:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:26:21Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:27:22Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:28:22Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:29:22Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:30:22Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:31:22Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:32:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:33:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:34:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:35:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:36:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:37:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:38:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:39:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:40:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:41:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:42:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:43:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:44:23Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
+[2022-07-15 19:45:24Z INFO JobDispatcher] Successfully renew job request 5444, job is valid till 07/15/2022 20:04:12
