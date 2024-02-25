@@ -1,0 +1,5 @@
+{{ if ComposerWithoutDev }}
+   php $composer install --ignore-platform-reqs --no-interaction --no dev
+{{else}}
+   ...
+{{end}}
