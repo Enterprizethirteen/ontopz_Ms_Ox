@@ -1,0 +1,5 @@
+docker run --rm mplatform/mquery mcr.microsoft.com/oryx/build:latest
+Image: mcr.microsoft.com/oryx/build:latest (digest: sha256:1409a5b0100d440763361d67a06b5f770775a8de068e2dbd4628d146a5a02393)
+ * Manifest List: No (Image type: application/vnd.docker.distribution.manifest.v2+json)
+ * Supports: linux/amd64
+```
