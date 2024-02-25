@@ -1,0 +1,89 @@
+10:36:11 AM test-middleware: Starting deployment...
+10:36:13 AM test-middleware: Creating zip package...
+10:36:13 AM test-middleware: Ignoring files from "appService.zipIgnorePattern"
+"node_modules{,/**}"
+".vscode{,/**}"
+10:36:14 AM test-middleware: Zip package size: 2.9 MB
+10:36:15 AM test-middleware: Fetching changes.
+10:36:16 AM test-middleware: Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/4139536f-3e04-43b3-a7f2-c267cd537678.zip (2.78 MB) to /tmp/zipdeploy/extracted
+10:36:19 AM test-middleware: Updating submodules.
+10:36:20 AM test-middleware: Preparing deployment for commit id '153ababfdd'.
+10:36:21 AM test-middleware: Repository path is /tmp/zipdeploy/extracted
+10:36:21 AM test-middleware: Running oryx build...
+10:36:21 AM test-middleware: Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 14 -i /tmp/8d953351b8ba7c5 -p compress_node_modules=tar-gz --log-file /tmp/build-debug.log 
+10:36:23 AM test-middleware: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+10:36:23 AM test-middleware: You can report issues at https://github.com/Microsoft/Oryx/issues
+10:36:23 AM test-middleware: Oryx Version: 0.2.20210420.1, Commit: 85c6e9278aae3980b86cb1d520aaad532c814ed7, ReleaseTagName: 20210420.1
+10:36:24 AM test-middleware: Build Operation ID: |8fAcyWu0uTA=.2df54d90_
+10:36:24 AM test-middleware: Repository Commit : 153ababfdd774fbfaa3aff4439975295
+10:36:24 AM test-middleware: Detecting platforms...
+10:36:27 AM test-middleware: Detected following platforms:
+10:36:27 AM test-middleware:   nodejs: 14.15.1
+10:36:28 AM test-middleware: Using intermediate directory '/tmp/8d953351b8ba7c5'.
+10:36:28 AM test-middleware: Copying files to the intermediate directory...
+10:36:28 AM test-middleware: Done in 0 sec(s).
+10:36:28 AM test-middleware: Source directory     : /tmp/8d953351b8ba7c5
+10:36:28 AM test-middleware: Destination directory: /home/site/wwwroot
+10:36:28 AM test-middleware: Using Node version:
+10:36:28 AM test-middleware: v14.15.1
+10:36:28 AM test-middleware: Using Npm version:
+10:36:29 AM test-middleware: 6.14.8
+10:36:29 AM test-middleware: Running 'npm install --unsafe-perm'...
+10:36:32 AM test-middleware: npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+10:37:22 AM test-middleware: > core-js-pure@3.15.2 postinstall /tmp/8d953351b8ba7c5/node_modules/core-js-pure
+10:37:22 AM test-middleware: > node -e "try{require('./postinstall')}catch(e){}"
+10:37:23 AM test-middleware: �[96mThank you for using core-js (�[94m https://github.com/zloirock/core-js �[96m) for polyfilling JavaScript standard library!�[0m
+10:37:23 AM test-middleware: �[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: �[0m
+10:37:23 AM test-middleware: �[96m>�[94m https://opencollective.com/core-js �[0m
+10:37:23 AM test-middleware: �[96m>�[94m https://www.patreon.com/zloirock �[0m
+10:37:23 AM test-middleware: �[96mAlso, the author of core-js (�[94m https://github.com/zloirock �[96m) is looking for a good job -)�[0m
+10:37:25 AM test-middleware: npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+10:37:25 AM test-middleware: npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+10:37:25 AM test-middleware: added 564 packages from 514 contributors and audited 848 packages in 53.919s
+10:37:27 AM test-middleware: 64 packages are looking for funding
+10:37:27 AM test-middleware:   run `npm fund` for details
+10:37:27 AM test-middleware: found 0 vulnerabilities
+10:37:27 AM test-middleware: Running 'npm run build'...
+10:37:28 AM test-middleware: > test-middleware@0.0.1 prebuild /tmp/8d953351b8ba7c5
+10:37:28 AM test-middleware: > npm run clean && npm run copy-files
+10:37:29 AM test-middleware: > test-middleware@0.0.1 clean /tmp/8d953351b8ba7c5
+10:37:29 AM test-middleware: > rm -rf ./dist ./*.tsbuildinfo /.eslintcache
+10:37:30 AM test-middleware: > test-middleware@0.0.1 copy-files /tmp/8d953351b8ba7c5
+10:37:30 AM test-middleware: > mkdir -p dist && cp -r ./backend ./src/data ./dist
+10:37:30 AM test-middleware: > test-middleware@0.0.1 build /tmp/8d953351b8ba7c5
+10:37:30 AM test-middleware: > tsc
+10:37:30 AM test-middleware: sh: 1: tsc: Permission denied
+10:37:31 AM test-middleware: npm ERR! code ELIFECYCLE
+10:37:31 AM test-middleware: npm ERR! syscall spawn
+10:37:31 AM test-middleware: npm ERR! file sh
+10:37:31 AM test-middleware: npm ERR! errno ENOENT
+10:37:31 AM test-middleware: npm ERR! test-middleware@0.0.1 build: `tsc`
+10:37:31 AM test-middleware: npm ERR! spawn ENOENT
+10:37:31 AM test-middleware: npm ERR! 
+10:37:31 AM test-middleware: npm ERR! Failed at the test-middleware@0.0.1 build script.
+10:37:31 AM test-middleware: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+10:37:31 AM test-middleware: npm ERR! A complete log of this run can be found in:
+10:37:31 AM test-middleware: npm ERR!     /home/.npm/_logs/2021-07-30T08_37_31_042Z-debug.log
+10:37:32 AM test-middleware: /opt/Kudu/Scripts/starter.sh oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 14 -i /tmp/8d953351b8ba7c5 -p compress_node_modules=tar-gz --log-file /tmp/build-debug.log 
+10:37:38 AM: Deployment to "test-middleware" completed.
+10:46:21 AM test-middleware: Starting deployment...
+10:46:22 AM test-middleware: Creating zip package...
+10:46:23 AM test-middleware: Ignoring files from "appService.zipIgnorePattern"
+"node_modules{,/**}"
+".vscode{,/**}"
+10:46:24 AM test-middleware: Zip package size: 2.91 MB
+10:46:25 AM test-middleware: Fetching changes.
+10:46:26 AM test-middleware: Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/d5902bd2-109d-4b18-8749-f8120c12d6b3.zip (2.79 MB) to /tmp/zipdeploy/extracted
+10:46:35 AM test-middleware: Updating submodules.
+10:46:37 AM test-middleware: Preparing deployment for commit id '5706796313'.
+10:46:37 AM test-middleware: Repository path is /tmp/zipdeploy/extracted
+10:46:38 AM test-middleware: Running oryx build...
+10:46:38 AM test-middleware: Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 14 -i /tmp/8d953368b1bbd9d -p compress_node_modules=tar-gz --log-file /tmp/build-debug.log 
+10:46:46 AM test-middleware: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+10:46:46 AM test-middleware: You can report issues at https://github.com/Microsoft/Oryx/issues
+10:46:46 AM test-middleware: Oryx Version: 0.2.20210420.1, Commit: 85c6e9278aae3980b86cb1d520aaad532c814ed7, ReleaseTagName: 20210420.1
+10:46:46 AM test-middleware: Build Operation ID: |emDmcr50J04=.2de6c145_
+10:46:46 AM test-middleware: Repository Commit : 57067963134d4634a1927a2ba22a74f2
+10:46:46 AM test-middleware: Detecting platforms...
+10:49:40 AM test-middleware: An unknown error has occurred. Check the diagnostic log for details.
+10:49:41 AM test-middleware: Deployment failed.
