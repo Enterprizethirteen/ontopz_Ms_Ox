@@ -1,0 +1,35 @@
+Command: oryx build /home/site/repository -o /home/site/wwwroot --platform php --platform-version 7.4 -i /tmp/8da80f374d7bbe7 --log-file /tmp/build-debug.log  | tee /tmp/oryx-build.log
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20220308.4, Commit: c92fa6a2d6fc14dc9646f80e2bb2e393a5cdc258, ReleaseTagName: 20220308.4
+
+Build Operation ID: |dTfVkmBzUw4=.d32c6399_
+Repository Commit : cc47cdecb11e88cdfb33e1a5801cb1d4bde82297
+
+Detecting platforms...
+Detected following platforms:
+  nodejs: 14.19.1
+  php: 7.4.30
+
+Found BuildConfigurationFile
+Overriding the pre-build commands with the BuildConfigurationFile section
+	apt install curl;
+Overriding the post-build commands with the BuildConfigurationFile section
+	echo finished;
+
+Using intermediate directory '/tmp/8da80f374d7bbe7'.
+
+Copying files to the intermediate directory...
+Done in 2 sec(s).
+
+Source directory     : /tmp/8da80f374d7bbe7
+Destination directory: /home/site/wwwroot
+
+Executing pre-build command...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\nE: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)\nE: Unable to lock the administration directory (/var/lib/dpkg/), are you root?\n/bin/bash -c "oryx build /home/site/repository -o /home/site/wwwroot --platform php --platform-version 7.4 -i /tmp/8da80f374d7bbe7 --log-file /tmp/build-debug.log  | tee /tmp/oryx-build.log ; exit $PIPESTATUS "
