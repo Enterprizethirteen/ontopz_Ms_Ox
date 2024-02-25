@@ -1,0 +1,10 @@
+/home/DeploymentLogStream>cat a2d831bc-d89d-4770-85ed-07378f75243f.log
+
+{"timestamp": "2022-07-18T22:05:57.339Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "Updating submodules."}
+{"timestamp": "2022-07-18T22:05:57.507Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "Preparing deployment for commit id 'a2d831bc-d'."}
+{"timestamp": "2022-07-18T22:05:58.008Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "PreDeployment: context.CleanOutputPath False"}
+{"timestamp": "2022-07-18T22:05:58.232Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "PreDeployment: context.OutputPath /home/site/wwwroot"}
+{"timestamp": "2022-07-18T22:05:58.392Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "Repository path is /tmp/zipdeploy/extracted"}
+{"timestamp": "2022-07-18T22:06:00.433Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "Running oryx build..."}
+{"timestamp": "2022-07-18T22:06:00.449Z", "level": "Message", "containerName": "b6b71c4f1d0e", "machineName": "pl1sdlwk00088D", "message": "Command: oryx build /tmp/zipdeploy/extracted -o /tmp/build/expressbuild --platform python --platform-version 3.8 -i /tmp/8da6909b1556766 -p packagedir=.python_packages/lib/site-packages"}
+{"timestamp": "2022-07-18T22:30:49.715Z", "level": "Error", "containerName": "65b34a79af92", "machineName": "pl1sdlwk00088D", "message": "An unknown error has occurred. Check the diagnostic log for details."}
