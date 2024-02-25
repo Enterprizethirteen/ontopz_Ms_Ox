@@ -1,0 +1,12 @@
+$ /opt/python/3.10.4/bin/python3.10 -m pip install --cache-dir /usr/local/share/pip-cache --prefer-binary jupyter-bokeh --target=/home/codespace/.local/lib/python3.10/site-packages --upgrade
+$ jupyter-labextension list
+JupyterLab v3.5.2
+/home/codespace/.local/share/jupyter/labextensions
+
+$ pip show -f jupyter-bokeh
+...
+Files:
+  ../../etc/jupyter/nbconfig/notebook.d/jupyter_bokeh.json
+
+$ locate jupyter_bokeh.json
+/home/codespace/.local/lib/python3.10/site-packages/etc/jupyter/nbconfig/notebook.d/jupyter_bokeh.json
