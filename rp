@@ -1,0 +1,10 @@
+C:\> py -m pip install --user SomePackage
+[...]
+Requirement already satisfied (use --upgrade to upgrade)
+C:\> py -m pip install --user --upgrade SomePackage
+[...]
+Requirement already up-to-date: SomePackage
+# force the install
+C:\> py -m pip install --user --ignore-installed SomePackage
+[...]
+Successfully installed SomePackage
