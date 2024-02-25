@@ -1,0 +1,243 @@
+remote: Deploy Async        
+remote: Updating branch 'main'.        
+remote: Updating submodules.        
+remote: Preparing deployment for commit id 'dede7a777c'.        
+remote: PreDeployment: context.CleanOutputPath False        
+remote: PreDeployment: context.OutputPath /home/site/wwwroot        
+remote: Repository path is /home/site/repository        
+remote: Running oryx build...        
+remote: .............        
+remote: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx        
+remote: You can report issues at https://github.com/Microsoft/Oryx/issues        
+remote: 
+remote: Oryx Version: 0.2.20230210.1, Commit: a49c8f6b8abbe95b4356552c4c884dea7fd0d86e, ReleaseTagName: 20230210.1        
+remote: 
+remote: Build Operation ID: 95602423a8e5d60c        
+remote: Repository Commit : dede7a777c2db23d0c9fc88bd2cf77fa43cd6588        
+remote: OS Type           : bullseye        
+remote: Image Type        : githubactions        
+remote: 
+remote: Detecting platforms...        
+remote: ..        
+remote: Detected following platforms:        
+remote:   python: 3.11.0        
+remote: Version '3.11.0' of platform 'python' is not installed. Generating script to install it...        
+remote: 
+remote: Using intermediate directory '/tmp/8db5bb164e6f7c4'.        
+remote: 
+remote: Copying files to the intermediate directory...        
+remote: Done in 1 sec(s).        
+remote: 
+remote: Source directory     : /tmp/8db5bb164e6f7c4        
+remote: Destination directory: /home/site/wwwroot        
+remote: 
+remote: 
+remote: Downloading and extracting 'python' version '3.11.0' to '/tmp/oryx/platforms/python/3.11.0'...        
+remote: Detected image debian flavor: bullseye.        
+remote: Downloaded in 3 sec(s).        
+remote: Verifying checksum...        
+remote: Extracting contents...        
+remote: ...........        
+remote: performing sha512 checksum for: python...        
+remote: .        
+remote: Done in 26 sec(s).        
+remote: 
+remote: image detector file exists, platform is python..        
+remote: OS detector file exists, OS is bullseye..        
+remote: Python Version: /tmp/oryx/platforms/python/3.11.0/bin/python3.11        
+remote: Creating directory for command manifest file if it does not exist        
+remote: Removing existing manifest file        
+remote: Python Virtual Environment: antenv        
+remote: Creating virtual environment...        
+remote: .......................        
+remote: Activating virtual environment...        
+remote: Running pip install...        
+remote: .......................................        
+remote: [17:17:43+0000] Collecting Django        
+remote: [17:17:43+0000]   Downloading Django-4.2.1-py3-none-any.whl (8.0 MB)        
+remote: [17:17:44+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 8.4 MB/s eta 0:00:00        
+remote: [17:17:45+0000] Collecting whitenoise        
+remote: [17:17:45+0000]   Downloading whitenoise-6.4.0-py3-none-any.whl (19 kB)        
+remote: [17:17:45+0000] Collecting asgiref<4,>=3.6.0        
+remote: [17:17:45+0000]   Downloading asgiref-3.7.0-py3-none-any.whl (24 kB)        
+remote: [17:17:46+0000] Collecting sqlparse>=0.3.1        
+remote: [17:17:46+0000]   Downloading sqlparse-0.4.4-py3-none-any.whl (41 kB)        
+remote: [17:17:46+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 kB 376.4 kB/s eta 0:00:00        
+remote: [17:17:47+0000] Installing collected packages: whitenoise, sqlparse, asgiref, Django        
+remote: [17:18:14+0000] Successfully installed Django-4.2.1 asgiref-3.7.0 sqlparse-0.4.4 whitenoise-6.4.0        
+remote: 
+remote: [notice] A new release of pip available: 22.3 -> 23.1.2        
+remote: [notice] To update, run: pip install --upgrade pip        
+remote: 
+remote: Content in source directory is a Django app        
+remote: Running collectstatic...        
+remote: .        
+remote: Traceback (most recent call last):        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py", line 27, in <module>        
+remote:     main()        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py", line 23, in main        
+remote:     execute_from_command_line(sys.argv)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line        
+remote:     utility.execute()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py", line 416, in execute        
+remote:     django.setup()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup        
+remote:     apps.populate(settings.INSTALLED_APPS)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate        
+remote:     app_config.ready()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready        
+remote:     self.module.autodiscover()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 50, in autodiscover        
+remote:     autodiscover_modules("admin", register_to=site)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules        
+remote:     import_module("%s.%s" % (app_config.name, module_to_search))        
+remote:   File "/tmp/oryx/platforms/python/3.11.0/lib/python3.11/importlib/__init__.py", line 126, in import_module        
+remote:     return _bootstrap._gcd_import(name[level:], package, level)        
+remote:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+remote:   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import        
+remote:   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load        
+remote:   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked        
+remote:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked        
+remote:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module        
+remote:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/__init__.py", line 14, in <module>        
+remote:     from django.contrib.gis.admin.options import GeoModelAdmin, GISModelAdmin, OSMGeoAdmin        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/options.py", line 4, in <module>        
+remote:     from django.contrib.gis.admin.widgets import OpenLayersWidget        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/widgets.py", line 5, in <module>        
+remote:     from django.contrib.gis.gdal import GDALException        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/__init__.py", line 28, in <module>        
+remote:     from django.contrib.gis.gdal.datasource import DataSource        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/datasource.py", line 40, in <module>        
+remote:     from django.contrib.gis.gdal.driver import Driver        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/driver.py", line 5, in <module>        
+remote:     from django.contrib.gis.gdal.prototypes import ds as vcapi        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/prototypes/ds.py", line 9, in <module>        
+remote:     from django.contrib.gis.gdal.libgdal import lgdal        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/libgdal.py", line 64, in <module>        
+remote:     raise ImproperlyConfigured(        
+remote: django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal", "GDAL", "gdal3.6.0", "gdal3.5.0", "gdal3.4.0", "gdal3.3.0", "gdal3.2.0", "gdal3.1.0", "gdal3.0.0", "gdal2.4.0", "gdal2.3.0", "gdal2.2.0"). Is GDAL installed? If it is, try setting GDAL_LIBRARY_PATH in your settings.        
+remote: "2023-05-23 17:18:22"|WARNING|Traceback (most recent call last):        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py", line 27, in <module>        
+remote:     main()        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py", line 23, in main        
+remote:     execute_from_command_line(sys.argv)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line        
+remote:     utility.execute()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py", line 416, in execute        
+remote:     django.setup()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup        
+remote:     apps.populate(settings.INSTALLED_APPS)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate        
+remote:     app_config.ready()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready        
+remote:     self.module.autodiscover()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 50, in autodiscover        
+remote:     autodiscover_modules("admin", register_to=site)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules        
+remote:     import_module("%s.%s" % (app_config.name, module_to_search))        
+remote:   File "/tmp/oryx/platforms/python/3.11.0/lib/python3.11/importlib/__init__.py", line 126, in import_module        
+remote:     return _bootstrap._gcd_import(name[level:], package, level)        
+remote:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+remote:   File "<frozen importlib._bootstrap>", line 1206, in _gcd_import        
+remote:   File "<frozen importlib._bootstrap>", line 1178, in _find_and_load        
+remote:   File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked        
+remote:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked        
+remote:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module        
+remote:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/__init__.py", line 14, in <module>        
+remote:     from django.contrib.gis.admin.options import GeoModelAdmin, GISModelAdmin, OSMGeoAdmin        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/options.py", line 4, in <module>        
+remote:     from django.contrib.gis.admin.widgets import OpenLayersWidget        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/widgets.py", line 5, in <module>        
+remote:     from django.contrib.gis.gdal import GDALException        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/__init__.py", line 28, in <module>        
+remote:     from django.contrib.gis.gdal.datasource import DataSource        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/datasource.py", line 40, in <module>        
+remote:     from django.contrib.gis.gdal.driver import Driver        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/driver.py", line 5, in <module>        
+remote:     from django.contrib.gis.gdal.prototypes import ds as vcapi        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/prototypes/ds.py", line 9, in <module>        
+remote:     from django.contrib.gis.gdal.libgdal import lgdal        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/libgdal.py", line 64, in <module>        
+remote:     raise ImproperlyConfigured(        
+remote: django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal", "GDAL", "gdal3.6.0", "gdal3.5.0", "gdal3.4.0", "gdal3.3.0", "gdal3.2.0", "gdal3.1.0", "gdal3.0.0", "gdal2.4.0", "gdal2.3.0", "gdal2.2.0"). Is GDAL installed? If it is, try setting GDAL_LIBRARY_PATH in your settings. | Exit code: 1 | Please review message | More information: https://aka.ms/troubleshoot-python        
+remote: Done in 7 sec(s).        
+remote: Not a vso image, so not writing build commands        
+remote: Preparing output...        
+remote: 
+remote: Copying files to destination directory '/tmp/_preCompressedDestinationDir'...        
+remote: ...        
+remote: Done in 13 sec(s).        
+remote: Compressing content of directory '/tmp/_preCompressedDestinationDir'...        
+remote: ......        
+remote: Copied the compressed output to '/home/site/wwwroot'        
+remote: 
+remote: Removing existing manifest file        
+remote: Creating a manifest file...        
+remote: Manifest file created.        
+remote: Copying .ostype to manifest output directory.        
+remote: 
+remote: Done in 131 sec(s).        
+remote: .        
+remote: Running post deployment command(s)...        
+remote: 
+remote: Generating summary of Oryx build        
+remote: Parsing the build logs        
+remote: Found 1 issue(s)        
+remote: 
+remote: Build Summary :        
+remote: ===============        
+remote: Errors (0)        
+remote: Warnings (1)        
+remote: 1. Traceback (most recent call last):        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py"  line 27  in <module>        
+remote:     main()        
+remote:   File "/tmp/8db5bb164e6f7c4/manage.py"  line 23  in main        
+remote:     execute_from_command_line(sys.argv)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py"  line 442  in execute_from_command_line        
+remote:     utility.execute()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/core/management/__init__.py"  line 416  in execute        
+remote:     django.setup()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/__init__.py"  line 24  in setup        
+remote:     apps.populate(settings.INSTALLED_APPS)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/apps/registry.py"  line 124  in populate        
+remote:     app_config.ready()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/apps.py"  line 27  in ready        
+remote:     self.module.autodiscover()        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/admin/__init__.py"  line 50  in autodiscover        
+remote:     autodiscover_modules("admin"  register_to=site)        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/utils/module_loading.py"  line 58  in autodiscover_modules        
+remote:     import_module("%s.%s" % (app_config.name  module_to_search))        
+remote:   File "/tmp/oryx/platforms/python/3.11.0/lib/python3.11/importlib/__init__.py"  line 126  in import_module        
+remote:     return _bootstrap._gcd_import(name[level:]  package  level)        
+remote:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+remote:   File "<frozen importlib._bootstrap>"  line 1206  in _gcd_import        
+remote:   File "<frozen importlib._bootstrap>"  line 1178  in _find_and_load        
+remote:   File "<frozen importlib._bootstrap>"  line 1149  in _find_and_load_unlocked        
+remote:   File "<frozen importlib._bootstrap>"  line 690  in _load_unlocked        
+remote:   File "<frozen importlib._bootstrap_external>"  line 940  in exec_module        
+remote:   File "<frozen importlib._bootstrap>"  line 241  in _call_with_frames_removed        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/__init__.py"  line 14  in <module>        
+remote:     from django.contrib.gis.admin.options import GeoModelAdmin  GISModelAdmin  OSMGeoAdmin        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/options.py"  line 4  in <module>        
+remote:     from django.contrib.gis.admin.widgets import OpenLayersWidget        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/admin/widgets.py"  line 5  in <module>        
+remote:     from django.contrib.gis.gdal import GDALException        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/__init__.py"  line 28  in <module>        
+remote:     from django.contrib.gis.gdal.datasource import DataSource        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/datasource.py"  line 40  in <module>        
+remote:     from django.contrib.gis.gdal.driver import Driver        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/driver.py"  line 5  in <module>        
+remote:     from django.contrib.gis.gdal.prototypes import ds as vcapi        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/prototypes/ds.py"  line 9  in <module>        
+remote:     from django.contrib.gis.gdal.libgdal import lgdal        
+remote:   File "/tmp/8db5bb164e6f7c4/antenv/lib/python3.11/site-packages/django/contrib/gis/gdal/libgdal.py"  line 64  in <module>        
+remote:     raise ImproperlyConfigured(        
+remote: django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal"  "GDAL"  "gdal3.6.0"  "gdal3.5.0"  "gdal3.4.0"  "gdal3.3.0"  "gdal3.2.0"  "gdal3.1.0"  "gdal3.0.0"  "gdal2.4.0"  "gdal2.3.0"  "gdal2.2.0"). Is GDAL installed? If it is  try setting GDAL_LIBRARY_PATH in your settings.        
+remote: -  Next Steps: Please review message        
+remote: -  For more details you can browse to https://aka.ms/troubleshoot-python        
+remote: 
+remote: 
+remote: Triggering recycle (preview mode disabled).        
+remote: Deployment successful. deployer =  deploymentPath = 
