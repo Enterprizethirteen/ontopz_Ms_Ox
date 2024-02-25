@@ -1,0 +1,7 @@
+9:13:40 PM openaif: Deployment Log file does not exist in /tmp/oryx-build.log
+
+9:13:40 PM openaif: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+
+9:13:40 PM openaif: Deployment Failed. deployer = ms-azuretools-vscode deploymentPath = Functions App ZipDeploy. Extract zip. Remote build.
+
+9:13:46 PM openaif: Deployment failed.
