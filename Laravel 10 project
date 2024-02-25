@@ -1,0 +1,12 @@
+Oryx Version: 0.2.20231027.1, Commit: 22314309551107182cffca9fc39d97480466c11c, ReleaseTagName: 20231027.1
+
+Build Operation ID: 6f3d4a6a82b0749a
+OS Type           : bullseye
+Image Type        : jamstack
+
+Detecting platforms...
+Detected following platforms:
+  nodejs: 16.20.2
+  php: 8.2.9
+Version '16.20.2' of platform 'nodejs' is not installed. Generating script to install it...
+Version '8.2.9' of platform 'php' is not installed. Generating script to install it...
