@@ -1,0 +1,34 @@
+[+] Building 4.9s (6/13)                                                                                                                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                           0.0s
+ => => transferring dockerfile: 640B                                                                                                                                                                           0.0s 
+ => [internal] load metadata for mcr.microsoft.com/oryx/python:3.10                                                                                                                                            0.2s 
+ => [internal] load .dockerignore                                                                                                                                                                              0.0s
+ => => transferring context: 207B                                                                                                                                                                              0.0s 
+ => CACHED [1/9] FROM mcr.microsoft.com/oryx/python:3.10@sha256:f2f9bbd0cfb0934fef30bbfbf404cb96570a6de2238a987337e35aa3e60918f4                                                                               0.0s 
+ => [internal] load build context                                                                                                                                                                              0.1s 
+ => => transferring context: 7.33kB                                                                                                                                                                            0.0s 
+ => ERROR [2/9] RUN apt-get update                                                                                                                                                                             4.6s 
+------
+ > [2/9] RUN apt-get update:
+0.716 Get:1 https://packages.microsoft.com/debian/12/prod bookworm InRelease [3617 B]
+0.821 Err:1 https://packages.microsoft.com/debian/12/prod bookworm InRelease
+0.821   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY EB3E94ADBE1229CF
+0.889 Get:2 http://deb.debian.org/debian bookworm InRelease [151 kB]
+0.947 Get:3 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+0.998 Get:4 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+1.082 Get:5 http://deb.debian.org/debian bookworm/main amd64 Packages [8786 kB]
+2.206 Get:6 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [12.7 kB]
+2.236 Get:7 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [137 kB]
+3.827 Reading package lists...
+4.515 W: GPG error: https://packages.microsoft.com/debian/12/prod bookworm InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY EB3E94ADBE1229CF
+4.515 E: The repository 'https://packages.microsoft.com/debian/12/prod bookworm InRelease' is not signed.
+------
+Dockerfile:6
+--------------------
+   4 |
+   5 |     # Install GCC for pyodbc
+   6 | >>> RUN apt-get update
+   7 |     RUN apt-get install -y gcc
+   8 |
+--------------------
+ERROR: failed to solve: process "/bin/sh -c apt-get update" did not complete successfully: exit code: 100
