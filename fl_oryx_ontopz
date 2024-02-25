@@ -1,0 +1,169 @@
+9:13:22 PM openaif: Starting deployment...
+
+9:13:22 PM openaif: Creating zip package...
+
+9:13:22 PM openaif: Zip package size: 2.51 kB
+
+9:13:24 PM openaif: Fetching changes.
+
+9:13:25 PM openaif: Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/[c2ce37d2-03a9-450d-931b-4455b137a979.zip](https://c2ce37d2-03a9-450d-931b-4455b137a979.zip/) (0.00 MB) to /tmp/zipdeploy/extracted
+
+9:13:27 PM openaif: Updating submodules.
+
+9:13:28 PM openaif: Preparing deployment for commit id '13b69679-a'.
+
+9:13:28 PM openaif: PreDeployment: context.CleanOutputPath False
+
+9:13:28 PM openaif: PreDeployment: context.OutputPath /home/site/wwwroot
+
+9:13:28 PM openaif: Repository path is /tmp/zipdeploy/extracted
+
+9:13:28 PM openaif: Running oryx build...
+
+9:13:28 PM openaif: Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.9.7 -p packagedir=.python_packages/lib/site-packages
+
+9:13:31 PM openaif: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+
+9:13:31 PM openaif: You can report issues at https://github.com/Microsoft/Oryx/issues
+
+9:13:31 PM openaif: Oryx Version: 0.2.20210120.1, Commit: 66c7820d7df527aaffabd2563a49ad57930999c9, ReleaseTagName: 20210120.1
+
+9:13:31 PM openaif: Build Operation ID: |WhbP3N1IfJI=.3b53af08_
+
+9:13:31 PM openaif: Repository Commit : 13b69679-a255-46db-91c1-193a09b37ace
+
+9:13:31 PM openaif: Detecting platforms...
+
+9:13:32 PM openaif: Detected following platforms:
+
+9:13:32 PM openaif:   python: 3.9.7
+
+9:13:32 PM openaif: Version '3.9.7' of platform 'python' is not installed. Generating script to install it...
+
+9:13:32 PM openaif: Source directory     : /tmp/zipdeploy/extracted
+
+9:13:32 PM openaif: Destination directory: /home/site/wwwroot
+
+9:13:32 PM openaif: Downloading and extracting 'python' version '3.9.7' to '/tmp/oryx/platforms/python/3.9.7'...
+
+9:13:33 PM openaif: Downloaded in 1 sec(s).
+
+9:13:33 PM openaif: Verifying checksum...
+
+9:13:34 PM openaif: Extracting contents...
+
+9:13:36 PM openaif: Done in 4 sec(s).
+
+9:13:36 PM openaif: Python Version: /tmp/oryx/platforms/python/3.9.7/bin/python3.9
+
+9:13:36 PM openaif: Running pip install...
+
+9:13:37 PM openaif: [01:13:37+0000] Collecting azure-functions
+
+9:13:37 PM openaif: [01:13:37+0000]   Downloading azure_functions-1.17.0-py3-none-any.whl (165 kB)
+
+9:13:37 PM openaif: [01:13:37+0000] Installing collected packages: azure-functions
+
+9:13:37 PM openaif: [01:13:37+0000] Successfully installed azure-functions-1.17.0
+
+9:13:38 PM openaif: WARNING: You are using pip version 20.2.3; however, version 23.2.1 is available.
+
+9:13:38 PM openaif: You should consider upgrading via the '/tmp/oryx/platforms/python/3.9.7/bin/python3.9 -m pip install --upgrade pip' command.
+
+9:13:38 PM openaif: Done in 2 sec(s).
+
+9:13:38 PM openaif: Preparing output...
+
+9:13:38 PM openaif: Copying files to destination directory '/home/site/wwwroot'...
+
+9:13:38 PM openaif: Done in 0 sec(s).
+
+9:13:38 PM openaif: Removing existing manifest file
+
+9:13:38 PM openaif: Creating a manifest file...
+
+9:13:38 PM openaif: Manifest file created.
+
+9:13:38 PM openaif: Done in 6 sec(s).
+
+9:13:39 PM openaif: Running post deployment command(s)...
+
+9:13:39 PM openaif: Generating summary of Oryx build
+
+9:13:39 PM openaif: Deployment Log file does not exist in /tmp/oryx-build.log
+
+9:13:39 PM openaif: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+
+9:13:39 PM openaif: Triggering recycle (preview mode disabled).
+
+9:13:39 PM openaif: Linux Consumption plan has a 1.5 GB memory limit on a remote build container.
+
+9:13:39 PM openaif: To check our service limit, please visit https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale#service-limits
+
+9:13:39 PM openaif: Writing the artifacts to a squashfs file
+
+9:13:39 PM openaif: Parallel mksquashfs: Using 1 processor
+
+9:13:39 PM openaif: Creating 4.0 filesystem on /home/site/artifacts/functionappartifact.squashfs, block size 131072.
+
+9:13:39 PM openaif: [===============================================================|] 141/141 100%
+
+9:13:39 PM openaif: Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+
+9:13:39 PM openaif: compressed data, compressed metadata, compressed fragments, compressed xattrs
+
+9:13:40 PM openaif: duplicates are removed
+
+9:13:40 PM openaif: Filesystem size 323.20 Kbytes (0.32 Mbytes)
+
+9:13:40 PM openaif: 26.60% of uncompressed filesystem size (1215.01 Kbytes)
+
+9:13:40 PM openaif: Inode table size 1489 bytes (1.45 Kbytes)
+
+9:13:40 PM openaif: 28.71% of uncompressed inode table size (5186 bytes)
+
+9:13:40 PM openaif: Directory table size 1550 bytes (1.51 Kbytes)
+
+9:13:40 PM openaif: 37.17% of uncompressed directory table size (4170 bytes)
+
+9:13:40 PM openaif: Number of duplicate files found 3
+
+9:13:40 PM openaif: Number of inodes 162
+
+9:13:40 PM openaif: Number of files 144
+
+9:13:40 PM openaif: Number of fragments 11
+
+9:13:40 PM openaif: Number of symbolic links  0
+
+9:13:40 PM openaif: Number of device nodes 0
+
+9:13:40 PM openaif: Number of fifo nodes 0
+
+9:13:40 PM openaif: Number of socket nodes 0
+
+9:13:40 PM openaif: Number of directories 18
+
+9:13:40 PM openaif: Number of ids (unique uids + gids) 1
+
+9:13:40 PM openaif: Number of uids 1
+
+9:13:40 PM openaif: root (0)
+
+9:13:40 PM openaif: Number of gids 1
+
+9:13:40 PM openaif: root (0)
+
+9:13:40 PM openaif: Creating placeholder blob for linux consumption function app...
+
+9:13:40 PM openaif: Malformed SCM_RUN_FROM_PACKAGE when uploading built content.
+
+9:13:40 PM openaif: Generating summary of Oryx build
+
+9:13:40 PM openaif: Deployment Log file does not exist in /tmp/oryx-build.log
+
+9:13:40 PM openaif: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+
+9:13:40 PM openaif: Deployment Failed. deployer = ms-azuretools-vscode deploymentPath = Functions App ZipDeploy. Extract zip. Remote build.
+
+9:13:46 PM openaif: Deployment failed.
