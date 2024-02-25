@@ -1,0 +1,39 @@
+$ git push azure main:master --force
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1012 bytes | 1012.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Deploy Async
+remote: Updating branch 'master'.
+remote: Updating submodules.
+remote: Preparing deployment for commit id '700b994657'.
+remote: Repository path is /home/site/repository
+remote: Running oryx build...
+remote: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+remote: You can report issues at https://github.com/Microsoft/Oryx/issues
+remote:
+remote: Oryx Version: 0.2.20211207.1, Commit: 46633df49cc8fbe9718772a3c894df221273b2af, ReleaseTagName: 20211207.1
+remote:
+remote: Build Operation ID: |UpymsBalEyg=.7e8df737_
+remote: Repository Commit : 700b99465783fc2b6481c08dcec082a880d44597
+remote:
+remote: Detecting platforms...
+remote: Detected following platforms:
+remote:   python: 3.9.7
+remote:
+remote: Using intermediate directory '/tmp/8da2b061bda3711'.
+remote:
+remote: Copying files to the intermediate directory...
+remote: Done in 0 sec(s).
+remote:
+remote: Source directory     : /tmp/8da2b061bda3711
+remote: Destination directory: /home/site/wwwroot
+remote:
+remote: Executing pre-build command...
+remote: /home/site/repository/prebuild.sh: /tmp/oryx/platforms/python/3.9.7/bin/pip: /opt/python/3.9.7/bin/python3.9: bad interpreter: No such file or directory
+remote: Deployment Failed.
+remote: Deployment Logs : 'https://e-treasure-hunt.scm.azurewebsites.net/jsonviewer?view_url=/api/deployments/700b99465783fc2b6481c08dcec082a880d44597/log'
+To https://e-treasure-hunt.scm.azurewebsites.net/e-treasure-hunt.git
+ + 05488a3...700b994 main -> master (forced update)
