@@ -1,0 +1,6 @@
+C:\> py -m pip install --user SomePackage
+[...]
+Requirement already satisfied (use --upgrade to upgrade)
+C:\> py -m pip install --user --upgrade SomePackage
+[...]
+Successfully installed SomePackage
