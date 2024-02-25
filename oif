@@ -1,0 +1,2 @@
+python -m pip install --upgrade --no-deps SomePackage
+python -m pip install SomePackage
