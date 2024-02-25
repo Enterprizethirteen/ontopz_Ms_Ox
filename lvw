@@ -1,0 +1,3 @@
+C:\> py -m pip list --outdated
+docutils (Current: 0.9.1 Latest: 0.10)
+Sphinx (Current: 1.1.2 Latest: 1.1.3)
