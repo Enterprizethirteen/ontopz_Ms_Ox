@@ -1,0 +1,3 @@
+C:\> py -m pip install --user SomePackage
+[...]
+Successfully installed SomePackage
